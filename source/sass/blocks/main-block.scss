@@ -1,0 +1,14 @@
+.main-block {
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+}
+
+.main-block__title {
+  width: 298px;
+  font-family: $Bebas;
+  font-size: 109px;
+  line-height: 109px;
+  text-align: right;
+  letter-spacing: 0.03em;
+
+  color: $white;
+}
