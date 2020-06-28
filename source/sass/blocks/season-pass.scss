@@ -1,0 +1,184 @@
+.season-pass {
+    background-color: #f8f9fc;
+}
+
+.season-pass__title {
+  font-family: $Bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  color: $dark-blue;
+  margin: 0;
+  padding-top: 232px;
+}
+
+.season-pass-list {
+  @include list-reset();
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 30px;
+  outline: 1px solid red;
+}
+
+.season-pass-list__item {
+  width: 360px;
+  height: 448px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: $white;
+  border: 7px solid transparent;
+
+  &:hover {
+  border-image: linear-gradient(to right bottom, #ED0233, #003EB7);
+  border-image-slice: 1;
+  }
+}
+
+.season-pass-list__title {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+
+  color: $dark-blue;
+  margin: 0;
+
+  padding-top: 57px;
+}
+
+.season-pass-list__subtitle {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #495A7D;
+  margin: 0;
+
+  padding-top: 10px;
+}
+
+.season-pass-list__price {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 90px;
+
+  color: #103AAE;
+  margin: 0;
+  margin-left: 2px;
+  padding-top: 65px;
+  position: relative;
+}
+
+
+.season-pass-list__price span {
+  color: #102654;
+  font-weight: normal;
+}
+
+.season-pass-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 206px;
+  height: 62px;
+
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid $dark-blue;
+  color: $dark-blue;
+
+  margin-top: 34px;
+
+  &:hover {
+    background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+    color: $white;
+    border: none;
+  }
+}
+
+/**/
+
+
+.features-slider {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+ /* margin-left: auto;
+  margin-right: auto;*/
+
+  outline: 1px solid green;
+  padding-top: 38px;
+  padding-bottom: 20px;
+  margin-left: 15px;
+
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 341px;
+    height: 3px;
+    bottom: 7px;
+    left: 1px;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+}
+
+.services-control__item {
+  font-family: $RobotoCondensed;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+color: rgba(16, 38, 84, 0.5);
+
+cursor: pointer;
+
+margin-right: 45px;
+
+&:last-child {
+  margin-right: 0;
+  }
+}
+
+#services-1:checked ~ .test .season-pass-list:first-child,
+#services-2:checked ~ .test .season-pass-list:nth-child(2),
+#services-3:checked ~ .test .season-pass-list:nth-child(3) {
+    display: block;
+}
+
+#services-1:checked ~ .services-control .services-control__item--one-month,
+#services-2:checked ~ .services-control .services-control__item--six-month,
+#services-3:checked ~ .services-control .services-control__item--twelve-month
+ {
+    color: $dark-blue;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 3px;
+      bottom: -16px;
+      left: 2px;
+      background-color: #D10A42;
+    }
+}

@@ -1,5 +1,50 @@
 .wrapper {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 0 103px;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 103px;
+
+  outline: 1px solid hotpink;
+
+  &--header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--main-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--gym {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &--season-pass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: $tablet) {
+  .wrapper {
+    padding: 0 45px;
+
+    &--gym {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .wrapper {
+    padding: 0 15px;
+
+    &--gym {
+      padding: 0;
+    }
+  }
 }

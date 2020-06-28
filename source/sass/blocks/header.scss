@@ -1,0 +1,64 @@
+.header__logo {
+  width: 89px;
+  height: 20px;
+
+  margin-top: 30px;
+}
+
+.header__phone {
+  font-family: $Bebas;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin-top: 28px;
+
+  color: $white;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid white;
+    height: 24px;
+  }
+
+  &:active {
+    opacity: 0.5;
+    border-bottom: none;
+  }
+}
+
+
+@media (max-width: $tablet) {
+  .header__logo {
+    width: 82px;
+    height: 17px;
+
+    margin-top: 40px;
+  }
+
+  .header__phone {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    margin-top: 37px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .header__logo {
+    width: 68px;
+    height: 15px;
+
+    margin-top: 20px;
+  }
+
+  .header__phone {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+
+    margin-top: 19px;
+  }
+}

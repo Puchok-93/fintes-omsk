@@ -11,63 +11,166 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<bode>
+<body>
   <header>
-    <div class="wrapper">
-    <a>
-      <img src="../img/supergym.png" width="89" height="20" alt="Лого Supergym">
-    </a>
-    <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
-  </div>
+    <div class="wrapper wrapper--header">
+      <a>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/supergym-logo-tablet.png">
+          <source media="(min-width: 767px)" srcset="img/supergym-logo-mobile.png">
+          <img class="header__logo" src="img/supergym-logo.png" alt="Лого Supergym">
+        </picture>
+      </a>
+      <a class="header__phone" href="tel:8-800-555-55-55">8-800-555-55-55</a>
+    </div>
   </header>
 
   <main>
     <section class="main-block">
-      <div class="wrapper">
-      <h1 class="main-block__title">Фитнес центр</h1>
-      <p class="main-block__subtitle">Омск</p>
-      <ul class="main-block-list">
-        <li class="main-block-list__item">Тренажерный зал</li>
-        <li class="main-block-list__item">Групповые занятия</li>
-        <li class="main-block-list__item">Кардио зона</li>
+      <div class="wrapper wrapper--main-block">
+        <div class="main-block__info">
+          <h1 class="main-block__title">Фитнес центр</h1>
+          <p class="main-block__subtitle">Омск</p>
+          <ul class="main-block-list">
+            <li class="main-block-list__item">Тренажерный зал</li>
+            <li class="main-block-list__item">Групповые занятия</li>
+            <li class="main-block-list__item">Кардио зона</li>
+          </ul>
+          <a class="main-block__link" href="#">Купить абонемент</a>
+        </div>
+        <div class="main-block__image-block">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-block-desktop.jpg">
+            <img class="main-block__image" src="img/main-block-tablet.jpg" width="500" height="556" alt="Лого Supergym">
+          </picture>
+        </div>
+
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a href="#">FB</a>
+          </li>
+          <li class="social-list__item">
+            <a href="#">VK</a>
+          </li>
+          <li class="social-list__item">
+            <a href="#">IG</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="gym">
+      <div class="wrapper wrapper--gym">
+        <div class="gym__info-block">
+          <h2 class="gym__title">Тренажёрный зал</h2>
+          <p class="gym__subtitle">Просторный зал площадью 900 кв/м</p>
+          <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+            Тренажерный
+            зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            <p class="gym__description gym__description--second-paragrapth">
+            В зале расположены отдельная зона
+            для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для
+            различных видов групповых занятий.</p>
+        </div>
+        <div class="gym__image-block">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/gym-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/gym-tablet.jpg">
+          <img class="gym__image" src="img/gym-mobile.jpg">
+        </picture>
+        </div>
+
+        <div class="gym__video-block">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/anons-video-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/anons-video-tablet.jpg">
+          <img class="gym__anons-video" src="img/anons-video-mobile.jpg" width="364" height="228">
+        </picture>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="season-pass">
+      <div class="wrapper wrapper--season-pass">
+      <h2 class="season-pass__title">Абонементы</h2>
+
+      <div class="features-slider">
+        <input class="visually-hidden" type="radio" name="buttons" id="services-1" checked>
+        <input class="visually-hidden" type="radio" name="buttons" id="services-2">
+        <input class="visually-hidden" type="radio" name="buttons" id="services-3">
+        <div class="services-control">
+          <label class="services-control__item services-control__item--one-month" for="services-1">1 месяц</label>
+          <label class="services-control__item services-control__item--six-month" for="services-2">6 месяцев</label>
+          <label class="services-control__item services-control__item--twelve-month" for="services-3">12 месяцев</label>
+        </div>
+      </div>
+      <div class="test">
+      <ul class="season-pass-list season-pass-list--one-month">
+        <li class="season-pass-list__item">
+          <h3 class="season-pass-list__title">С тренером</h3>
+          <p class="season-pass-list__subtitle">12 занятий</p>
+          <p class="season-pass-list__price">5000 <span>₽</span></p>
+          <a class="season-pass-list__link" href="#">Купить абонемент</a>
+        </li>
+        <li class="season-pass-list__item">
+          <h3 class="season-pass-list__title">Дневной</h3>
+          <p class="season-pass-list__subtitle">с 8:00 до 17:00</p>
+          <p class="season-pass-list__price">1700 <span>₽</span></p>
+          <a class="season-pass-list__link" href="#">Купить абонемент</a>
+        </li>
+        <li class="season-pass-list__item">
+          <h3 class="season-pass-list__title">Полный день</h3>
+          <p class="season-pass-list__subtitle">с 8:00 до 22:00</p>
+          <p class="season-pass-list__price">2700 <span>₽</span></p>
+          <a class="season-pass-list__link" href="#">Купить абонемент</a>
+        </li>
       </ul>
-      <a class="main-block__link" href="#">Купить абонемент</a>
+<!--
+      <ul class="season-pass-list season-pass-list--six-month">
+        <li class="season-pass-list__item">
+          <h3 class="season-pass-list__title">С тренером</h3>
+          <p class="season-pass-list__subtitle">72 занятия</p>
+          <p class="season-pass-list__price">25000 <span>₽</span></p>
+          <a class="season-pass-list__link" href="#">Купить абонемент</a>
+        </li>
+        <li class="season-pass-list__item">
+          <h3 class="season-pass-list__title">Дневной</h3>
+          <p class="season-pass-list__subtitle">с 8:00 до 17:00</p>
+          <p class="season-pass-list__price">9500 <span>₽</span></p>
+          <a class="season-pass-list__link" href="#">Купить абонемент</a>
+        </li>
+        <li class="season-pass-list__item">
+          <h3 class="season-pass-list__title">Полный день</h3>
+          <p class="season-pass-list__subtitle">с 8:00 до 22:00</p>
+          <p class="season-pass-list__price">13500 <span>₽</span></p>
+          <a class="season-pass-list__link" href="#">Купить абонемент</a>
+        </li>
+      </ul>
+
+      <ul class="season-pass-list season-pass-list--twelve-month">
+        <li class="season-pass-list__item">
+          <h3 class="season-pass-list__title">С тренером</h3>
+          <p class="season-pass-list__subtitle">144 занятия</p>
+          <p class="season-pass-list__price">55000 <span>₽</span></p>
+          <a class="season-pass-list__link" href="#">Купить абонемент</a>
+        </li>
+        <li class="season-pass-list__item">
+          <h3 class="season-pass-list__title">Дневной</h3>
+          <p class="season-pass-list__subtitle">с 8:00 до 17:00</p>
+          <p class="season-pass-list__price">20400 <span>₽</span></p>
+          <a class="season-pass-list__link" href="#">Купить абонемент</a>
+        </li>
+        <li class="season-pass-list__item">
+          <h3 class="season-pass-list__title">Полный день</h3>
+          <p class="season-pass-list__subtitle">с 8:00 до 22:00</p>
+          <p class="season-pass-list__price">29700 <span>₽</span></p>
+          <a class="season-pass-list__link" href="#">Купить абонемент</a>
+        </li>
+      </ul>-->
     </div>
-    </section>
-
-    <section>
-      <h2>Тренажёрный зал</h2>
-      <p>Просторный зал площадью 900 кв/м</p>
-      <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный
-        зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-        <br>
-        В зале расположены отдельная зона
-        для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для
-        различных видов групповых занятий.</p>
-    </section>
-
-    <section>
-      <h2>Абонементы</h2>
-      <ul>
-        <li>
-          <h3>С тренером</h3>
-          <p>12 занятий</p>
-          <p>5000</p>
-          <a href="#">Купить абонемент</a>
-        </li>
-        <li>
-          <h3>Дневной</h3>
-          <p>с 8:00 до 17:00</p>
-          <p>1700</p>
-          <a href="#">Купить абонемент</a>
-        </li>
-        <li>
-          <h3>Полный день</h3>
-          <p>с 8:00 до 22:00</p>
-          <p>2700</p>
-          <a href="#">Купить абонемент</a>
-        </li>
-      </ul>
+      </div>
     </section>
 
     <section>
@@ -239,6 +342,6 @@
     </ul>
   </footer>
 
-</body>
+  </body>
 
 </html>

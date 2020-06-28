@@ -1,0 +1,39 @@
+.social-list {
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 13px;
+  height: 80px;
+  margin-top: 487px;
+}
+
+.social-list__item a {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $white;
+  }
+
+  &:active {
+    opacity: 0.5;
+    outline: none;
+  }
+}
+
+@media (max-width: $tablet) {
+  .social-list {
+    display: none;
+  }
+}
