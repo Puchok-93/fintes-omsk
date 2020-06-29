@@ -1,3 +1,7 @@
+.gym {
+  padding-bottom: 115px;
+}
+
 .gym__title {
   //width: 90%;
   font-family: $Bebas;
@@ -146,6 +150,10 @@
 
 
 @media (max-width: $mobile) {
+  .gym {
+    padding-bottom: 65px;
+  }
+
   .gym__info-block {
     align-items: flex-start;
   }

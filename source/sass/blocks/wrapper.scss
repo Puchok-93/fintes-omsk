@@ -26,6 +26,14 @@
     flex-direction: column;
     align-items: center;
   }
+
+  &--events {
+    display: flex;
+  }
+
+  /*&--advantages {
+    display: flex;
+  }*/
 }
 
 
@@ -43,8 +51,15 @@
   .wrapper {
     padding: 0 15px;
 
+    outline: 1px solid blue;
+
     &--gym {
       padding: 0;
+    }
+
+    &--events {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
