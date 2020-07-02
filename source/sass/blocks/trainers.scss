@@ -1,70 +1,56 @@
-.trainers {
-  padding-top: 122px;
-  padding-bottom: 140px;
-  background-color: green;
+.coaches {
+  padding-bottom: 118px;
 }
 
-.trainers__title {
-    font-family: $Bebas;
-    font-size: 49px;
-    line-height: 49px;
-    letter-spacing: 0.03em;
-    color: $dark-blue;
-    margin: 0;
+.coaches__title {
+  font-family: $Bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
 
-    margin-left: 2px;
-}
-
-.trainers-list {
-  @include list-reset();
-  display: flex;
-  justify-content: space-between;
-
-
-  margin-top: 53px;
-}
-
-.trainers__info {
-  @include list-reset();
-  height: 294px;
-  width: 260px;
-  background-color: rgba(16, 38, 84, 0.89);
-}
-
-.trainers__info ul {
-  width: 143px;
-  @include list-reset();
-  font-family: $RobotoCondensed;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: #FFFFFF;
-
-  margin-top: -100px;
-  z-index: -1;
-}
-
-.trainers-list__item:hover .trainers__info {
-  display: block;
-}
-
-.trainers-list__avatar {
-  max-width: 100%;
-  height: auto;
-  z-index: 1;
-}
-
-.trainers-list__name {
-  font-family: $RobotoCondensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 27px;
-  color: $white;
+  color: #102654;
   margin: 0;
 
-  margin-top: -53px;
-  margin-left: 70px;
+  padding-top: 122px;
 }
 
+.slider__list {
+  @include list-reset();
+  margin-top: 52px;
+}
+
+@media (max-width: $tablet) {
+  .coaches {
+    background-color: lightcoral;
+    padding-bottom: 98px;
+  }
+
+  .coaches__title {
+    width: 129px;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider__list {
+    margin-top: 42px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .coaches {
+    background-color: lightcoral;
+    padding-bottom: 45px;
+  }
+
+  .coaches__title {
+    font-size: 32px;
+    line-height: 32px;
+
+    padding-top: 70px;
+  }
+}

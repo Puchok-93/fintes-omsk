@@ -1,0 +1,143 @@
+.actions-list {
+  width: 48.3%;
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.actions-list__item {
+  width: 97.5%;
+  height: 197px;
+
+  border: 7px solid red;
+  border-image: linear-gradient(to right bottom, #ED0233, #003EB7);
+  border-image-slice: 1;
+}
+
+.actions-list__title {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #1C3374;
+
+  margin: 0;
+  margin-left: 29px;
+  margin-top: 22px;
+}
+
+.actions-list__description {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1C3374;
+  margin: 0;
+  margin-left: 29px;
+  margin-top: 7px;
+}
+
+.actions-list__link {
+  display: block;
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1C3374;
+  margin-left: 29px;
+  margin-top: 70px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 69px;
+    height: 1px;
+    top: 15px;
+    left: 0;
+    background-color: #1C3374;
+  }
+}
+
+@media (max-width: $tablet) {
+  .actions-list {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  .actions-list__item {
+    width: 45.7%;
+    height: 197px;
+
+    border: 7px solid red;
+    border-image: linear-gradient(to right bottom, #ED0233, #003EB7);
+    border-image-slice: 1;
+  }
+
+  .actions-list__title {
+    margin-left: 28px;
+    margin-top: 21px;
+  }
+
+  .actions-list__description {
+    width: 79%;
+
+    &--free-month {
+      width: 70%;
+    }
+  }
+
+  .actions-list__link {
+    margin-top: 71px;
+    margin-left: 28px;
+
+    &--free-month {
+      margin-left: 28px;
+      margin-top: 49px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .actions-list {
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+  .actions-list__item {
+    width: 95%;
+    height: 197px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 30px;
+  }
+
+  .actions-list__title {
+    margin: 0;
+    margin-top: 32px;
+  }
+
+  .actions-list__description {
+    text-align: center;
+    margin: 0;
+    margin-top: 9px;
+    width: 159px;
+  }
+
+  .actions-list__link {
+    margin: 0;
+    margin-top: 25px;
+  }
+}

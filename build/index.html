@@ -7,6 +7,7 @@
   <meta name="description" content="Компания Smart Device занимается продажей и монтажом печатных плат, а также продажей сопуствующего оборудования">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Supergym - фитнес центр</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -127,48 +128,6 @@
             <a class="season-pass-list__link" href="#">Купить абонемент</a>
           </li>
         </ul>
-        <!--
-      <ul class="season-pass-list season-pass-list--six-month">
-        <li class="season-pass-list__item">
-          <h3 class="season-pass-list__title">С тренером</h3>
-          <p class="season-pass-list__subtitle">72 занятия</p>
-          <p class="season-pass-list__price">25000 <span>₽</span></p>
-          <a class="season-pass-list__link" href="#">Купить абонемент</a>
-        </li>
-        <li class="season-pass-list__item">
-          <h3 class="season-pass-list__title">Дневной</h3>
-          <p class="season-pass-list__subtitle">с 8:00 до 17:00</p>
-          <p class="season-pass-list__price">9500 <span>₽</span></p>
-          <a class="season-pass-list__link" href="#">Купить абонемент</a>
-        </li>
-        <li class="season-pass-list__item">
-          <h3 class="season-pass-list__title">Полный день</h3>
-          <p class="season-pass-list__subtitle">с 8:00 до 22:00</p>
-          <p class="season-pass-list__price">13500 <span>₽</span></p>
-          <a class="season-pass-list__link" href="#">Купить абонемент</a>
-        </li>
-      </ul>
-
-      <ul class="season-pass-list season-pass-list--twelve-month">
-        <li class="season-pass-list__item">
-          <h3 class="season-pass-list__title">С тренером</h3>
-          <p class="season-pass-list__subtitle">144 занятия</p>
-          <p class="season-pass-list__price">55000 <span>₽</span></p>
-          <a class="season-pass-list__link" href="#">Купить абонемент</a>
-        </li>
-        <li class="season-pass-list__item">
-          <h3 class="season-pass-list__title">Дневной</h3>
-          <p class="season-pass-list__subtitle">с 8:00 до 17:00</p>
-          <p class="season-pass-list__price">20400 <span>₽</span></p>
-          <a class="season-pass-list__link" href="#">Купить абонемент</a>
-        </li>
-        <li class="season-pass-list__item">
-          <h3 class="season-pass-list__title">Полный день</h3>
-          <p class="season-pass-list__subtitle">с 8:00 до 22:00</p>
-          <p class="season-pass-list__price">29700 <span>₽</span></p>
-          <a class="season-pass-list__link" href="#">Купить абонемент</a>
-        </li>
-      </ul>-->
       </div>
     </section>
 
@@ -200,135 +159,183 @@
       </div>
     </section>
 
-    <section class="trainers">
+   <section class="coaches container-slider" id="coaches">
       <div class="wrapper">
-        <h2 class="trainers__title">Тренеры</h2>
-        <ul class="trainers-list">
-          <li class="trainers-list__item">
-              <img class="trainers-list__avatar" src="img/avatar-anna.jpg" width="260" height="294">
-              <p class="trainers-list__name">Анна Павлова</p>
-          </li>
-          <li class="trainers-list__item">
-            <img class="trainers-list__avatar" src="img/avatar-aleksey.jpg" width="260" height="294">
-            <p class="trainers-list__name">Алексей Лавров</p>
-          </li>
-          <li class="trainers-list__item">
-            <img class="trainers-list__avatar" src="img/avatar-alex.jpg" width="260" height="294">
-            <p class="trainers-list__name">Александр Пашков</p>
-          </li>
-          <li class="trainers-list__item">
-            <img class="trainers-list__avatar" src="img/avatar-maria.jpg" width="260" height="294">
-            <p class="trainers-list__name">Мария Кетова</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <h2 class="coaches__title">Тренеры</h2>
 
-    <section class="advantages">
-      <div class="wrapper wrapper--advantages">
-      <h2 class="advantages__title">Наши преимущества</h2>
-<div class="advantages-blocks">
-        <ul class="advantages-first-block">
-          <li>
-            <h3 class="advantages-first-block__title">Площадь</h3>
-            <p class="advantages-first-block__description">Занимайтесь без очередей и толпучки</p>
-          </li>
-          <li>
-            <h3 class="advantages-first-block__title">Комфорт</h3>
-            <p class="advantages-first-block__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-          </li>
-        </ul>
-
-      <div class="advantages-second-block">
-        <h3 class="advantages-second-block__title">Тренажеров</h3>
-        <p class="advantages-second-block__description">Современные тренажеры на все группы мышц</p>
+      <div class="coaches__slider slider">
+        <div class="slider__wrapper swiper-container">
+          <ul class="slider__list swiper-wrapper">
+            <li class="slider__item swiper-slide">
+              <img src="img/avatar-anna.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+            </li>
+          </ul>
+        </div>
+        
+        
       </div>
 
-        <ul class="advantages-third-block">
-          <li>
-            <h3 class="advantages-third-block__title">Собственная парковка</h3>
-            <p class="advantages-third-block__description">Вы всегда найдете место для своей машины на нашей парковке</p>
-          </li>
-          <li>
-            <h3 class="advantages-third-block__title">Тренерский опыт</h3>
-            <p class="advantages-third-block__description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
-          </li>
-        </ul>
-      </div>
     </div>
     </section>
+    <section class="advantages">
+      <div class="wrapper wrapper--advantages">
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <div class="advantages-blocks">
+          <ul class="advantages-list advantages-list--top">
+            <li class="advantages-list__item advantages-list__item--area">
+              <h3 class="advantages-list__title advantages-list__title--area">Площадь</h3>
+              <p class="advantages-list__description advantages-list__description--area">Занимайтесь без очередей и
+                толпучки</p>
+            </li>
+            <li class="advantages-list__item advantages-list__item--parking">
+              <h3 class="advantages-list__title advantages-list__title--parking">Собственная парковка</h3>
+              <p class="advantages-list__description advantages-list__description--parking">Вы всегда найдете место для
+                своей машины на нашей парковке</p>
+            </li>
+          </ul>
 
-    <section>
-      <h2>Акции</h2>
+          <div class="advantages-second-block">
+            <h3 class="advantages-second-block__title">Тренажеров</h3>
+            <p class="advantages-second-block__description">Современные тренажеры на все группы мышц</p>
+          </div>
 
-      <div>
-        <p>4999</p>
-        <p>год</p>
-        <p>Безлимитный абонемент в тренажерный зал</p>
-        <a href="#">Подробнее</a>
+         <ul class="advantages-list advantages-list--bottom">
+            <li class="advantages-list__item advantages-list__item--comfort">
+              <h3 class="advantages-list__title advantages-list__title--comfort">Комфорт</h3>
+              <p class="advantages-list__description advantages-list__description--comfort">Просторные раздевалки,
+                душевые, фен, Wi-Fi, кулеры</p>
+            </li>
+            <li class="advantages-list__item advantages-list__item--experience">
+              <h3 class="advantages-list__title advantages-list__title--experience">Тренерский опыт</h3>
+              <p class="advantages-list__description advantages-list__description--experience">Добивайтесь своих целей
+                быстрее с профессиональным тренером</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="actions">
+      <div class="wrapper wrapper--action">
+      <h2 class="actions__title">Акции</h2>
+
+<div class="actions-block">
+      <div class="main-action">
+        <p class="main-action__year">Год</p>
+        <p class="main-action__price">4999</p>
+        <p class="main-action__description">Безлимитный абонемент в тренажерный зал</p>
+        <a class="main-action__link" href="#">Подробнее</a>
       </div>
 
-      <ul>
-        <li>
-          <h3>Месяц бесплатно</h3>
-          <p>Приведи друга, получи абонемент в подарок</p>
-          <a href="#">Подробнее</a>
+      <ul class="actions-list">
+        <li class="actions-list__item">
+          <h3 class="actions-list__title">Месяц бесплатно</h3>
+          <p class="actions-list__description actions-list__description--free-month">Приведи друга, получи абонемент в подарок</p>
+          <a class="actions-list__link actions-list__link--free-month" href="#">Подробнее</a>
         </li>
-        <li>
-          <h3>Скидка 20%</h3>
-          <p>Корпоративный фитнес с командой</p>
-          <a href="#">Подробнее</a>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Отзывы</h2>
-      <ul>
-        <li>
-          <h3>Анна Орлова</h3>
-          <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
-            персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
-        </li>
-        <li>
-          <h3>Анна Орлова</h3>
-          <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
-            персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+        <li class="actions-list__item">
+          <h3 class="actions-list__title">Скидка 20%</h3>
+          <p class="actions-list__description">Корпоративный фитнес с командой</p>
+          <a class="actions-list__link" href="#">Подробнее</a>
         </li>
       </ul>
+    </div>
+  </div>
     </section>
 
-    <section>
-      <div>
-        <h2>Беслатное занятие</h2>
+  <section class="reviews container-phone" id="reviews">
+    <div class="wrapper wrapper--responses">
+    <h2 class="responses__title">Отзывы</h2>
+    <div class="slider-responses">
+      <div class="slider-responses__wrapper swiper-container">
+        <ul class="slider-responses__list  swiper-wrapper">
+          <li class="slider-responses__item swiper-slide">
+            <img src="img/avatar-response.png" width="80" height="80" alt="Фотография Анны">
+            <div class="slider-responses__text">
+              <h3>Анна Орлова</h3>
+              <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда
+                чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет
+                очередей»
+              </blockquote>
+            </div>
+          </li>
+          <li class="slider-responses__item swiper-slide">
+            <img src="img/avatar-response.png" width="80" height="80" alt="Фотография Анны">
+            <div class="slider-responses__text">
+              <h3>Иван Иванов</h3>
+              <blockquote>«Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Animi,
+                delectus explicabo deserunt maxime doloribus temporibus quaerat molestiae nesciunt nisi enim
+                dolorem!»
+              </blockquote>
+            </div>
+          </li>
+          <li class="slider-responses__item swiper-slide">
+            <img src="img/avatar-response.png" width="80" height="80" alt="Фотография Анны">
+            <div class="slider-responses__text">
+              <h3>Пётр Петров</h3>
+              <blockquote>"Все круто!"
+              </blockquote>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul class="slider-reviews__controls-list">
+        <li class="slider-reviews__controls-item">
+          <button class="slider-reviews__btn slider-reviews__btn--prev" type="button" aria-label="Предыдущий слайд"></button>
+        </li>
+        <li class="slider-reviews__control-item">
+          <button class="slider-reviews__btn slider-reviews__btn--next" type="button" aria-label="Предыдущий слайд"></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </section>
+
+    <section class="feedback">
+      <div class="wrapper wrapper--feedback">
+      <div class="feedback-form">
+        <h2 class="feedback-form__title">Бесплатное занятие</h2>
         <form>
-          <input type="text">
-          <input type="tel">
+          <div>
+            <input class="callback-popup-form__input-name" type="text" required="">
+            <div class="callback-popup-form__label-box">
+              <label class="callback-popup-form__label-name">Имя</label>
+            </div>
+          </div>
+
+          <div>
+            <input class="callback-popup-form__input-phone" type="tel" required="">
+            <div class="callback-popup-form__label-box">
+              <label class="callback-popup-form__label-phone">Телефон</label>
+            </div>
+          </div>
           <button type="submit">Отправить</button>
         </form>
       </div>
 
-      <div>
-        <h2>Контакты</h2>
-        <ul>
-          <li>
+      <div class="feedback-contacts">
+        <h2 class="feedback-contacts__title">Контакты</h2>
+        <ul class="feedback-contacts__list">
+          <li class="feedback-contacts__item feedback-contacts__item--adress">
             <h3>Адрес:</h3>
             <address>г. Омск, ул. 60 лет Октября, 7</address>
           </li>
-          <li>
+          <li class="feedback-contacts__item feedback-contacts__item--phone">
             <h3>Телефон:</h3>
             <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
           </li>
-          <li>
-            <h3>График:</h3>
+          <li class="feedback-contacts__item">
+            <h3>График работы:</h3>
             <p>Пн-Вс: с 8:00 до 22:00</p>
           </li>
-          <li>
+          <li class="feedback-contacts__item">
             <h3>Email:</h3>
             <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
           </li>
         </ul>
       </div>
+    </div>
     </section>
 
   </main>
@@ -365,7 +372,33 @@
       </li>
     </ul>
   </footer>
-
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    const slideReviewsrBlock = document.querySelector(`.slider-responses__wrapper`);
+  if (slideReviewsrBlock) {
+    const reviewsSlider = new Swiper(`.slider-responses__wrapper`, {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 57,
+      navigation: {
+        nextEl: `.slider-reviews__btn--next`,
+        prevEl: `.slider-reviews__btn--prev`
+      },
+      breakpoints: {
+        320: {
+          spaceBetween: 32
+        },
+        768: {
+          spaceBetween: 57
+        },
+        1200: {
+          spaceBetween: 80
+        }
+      }
+    });
+  }
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,186 @@
+.actions {
+  background-color: lightgreen;
+}
+
+.actions__title {
+  width: 113px;
+  font-family: $Bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  color: #102654;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 116px;
+}
+
+.actions-block {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 52px;
+}
+
+.main-action {
+  width: 48.5%;
+  height: 462px;
+
+  background-color: $red;
+  background-image: url("../img/action-block.jpg");
+  background-repeat: no-repeat;
+  //background-size: 280px 462px;
+  background-size: contain;
+  background-position: right;
+}
+
+.main-action__year {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 44px;
+  color: $white;
+  margin: 0;
+  margin-left: 46px;
+  margin-top: 33px;
+}
+
+.main-action__price {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  color: $white;
+  margin: 0;
+  margin-top: -13px;
+  margin-left: 46px;
+}
+
+.main-action__description {
+  width: 189px;
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: $white;
+  margin: 0;
+  margin-top: 13px;
+  margin-left: 46px;
+}
+
+.main-action__link {
+  display: block;
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  margin-top: 189px;
+  margin-left: 46px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 1px;
+    top: 16px;
+    left: 0;
+    background-color: $white;
+  }
+}
+
+
+@media (max-width: $tablet) {
+  .actions__title {
+    font-size: 42px;
+    line-height: 42px;
+    padding-top: 100px;
+  }
+
+  .main-action {
+    width: 100%;
+    height: 462px;
+
+    background-color: $red;
+    background-image: url("../img/action-block-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+
+  .actions-block {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main-action {
+    width: 100%;
+    height: 598px;
+
+
+    background-image: url("../img/action-block-mobile.jpg");
+    background-size: 100% 299px;
+    background-position: bottom;
+  }
+
+  .main-action__year {
+    width: 41px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-action__price {
+    width: 142px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-action__description {
+    width: 189px;
+    text-align: center;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-action__link {
+    width: 79px;
+    display: block;
+    font-family: $RobotoCondensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    margin-top: 31px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .actions__title {
+    font-family: $Bebas;
+    font-size: 32px;
+    line-height: 32px;
+
+    padding-top: 67px;
+  }
+
+  .actions-block {
+    margin-top: 45px;
+  }
+}

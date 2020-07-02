@@ -1,0 +1,233 @@
+.reviews {
+  padding-bottom: 120px;
+}
+
+.responses__title {
+  width: 143px;
+  font-family: $Bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  color: #102654;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 118px;
+}
+
+.slider-responses {
+  width: 720px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 52px;
+}
+
+.slider-responses__wrapper {
+  width: 560px;
+  min-height: 242px;
+  margin-top: 12px;
+  box-sizing: border-box;
+
+  background-color: hotpink;
+}
+
+.slider-reviews__controls-list {
+  @include list-reset();
+  position: absolute;
+  width: 94%;
+  height: 34px;
+  top: 40%;
+  left: 3%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.slider-reviews__btn {
+  width: 18px;
+  height: 34px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  background-image: url("../img/icon-arrow-next.svg");
+  background-size: 16px 32px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.slider-reviews__btn--prev {
+  transform: rotate(180deg);
+}
+
+.slider-responses__list {
+  @include list-reset();
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-responses__item {
+  width: 100%;
+  max-width: 560px;
+  min-height: 242px;
+  background-color: #1c3374;
+
+  color: #ffffff;
+  display: flex;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  img {
+    margin-left: 62px;
+    margin-top: 63px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.swiper-slide-active {
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+}
+
+.slider-responses__text {
+  padding-left: 28px;
+  margin-top: 56px;
+
+  h3 {
+    font-family: $RobotoCondensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+
+    margin: 0;
+  }
+
+  blockquote {
+    width: 328px;
+    font-family: $RobotoCondensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+
+    margin: 0;
+    margin-top: 12px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: $tablet) {
+
+  .responses__title {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+
+    padding-top: 100px;
+  }
+
+.swiper-container {
+  width: 566px;
+  }
+
+  .slider-responses {
+    width: 678px;
+    margin: 0;
+    position: relative;
+
+    margin-top: 40px;
+
+  }
+  .slider-responses__item {
+    max-width: 566px;
+    min-height: 242px;
+    background-color: #1c3374;
+    color: #ffffff;
+    display: flex;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    img {
+      margin-left: 62px;
+      margin-top: 63px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .slider-responses__wrapper {
+    min-height: 335px;
+  }
+
+  .responses__title {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+
+    padding-top: 39px;
+  }
+
+  .swiper-container {
+    width: 226px;
+    }
+    .slider-responses {
+      width: 226px;
+      margin: 0;
+      position: relative;
+
+      margin-top: 31px;
+
+    }
+
+    .slider-responses__item {
+      flex-direction: column;
+      max-width: 226px;
+      min-height: 335px;
+      background-color: transparent;
+      color: #ffffff;
+      display: flex;
+      box-sizing: border-box;
+      cursor: pointer;
+
+      img {
+        margin: 0;
+      }
+    }
+
+    .slider-responses__text {
+      padding-left: 28px;
+      margin-top: 0;
+
+      h3 {
+        font-family: $RobotoCondensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: $white;
+
+        margin: 0;
+      }
+
+      blockquote {
+        width: 176px;
+        font-family: $RobotoCondensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $white;
+
+        margin: 0;
+        margin-top: 12px;
+        padding-bottom: 20px;
+      }
+    }
+}

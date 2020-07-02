@@ -1,0 +1,195 @@
+.feedback {
+  background-image:linear-gradient(to right, #102654 50%, #ffffff 50%);
+}
+
+.feedback-form {
+  width: 50%;
+  outline: 1px solid red;
+}
+
+.feedback-form__title {
+  font-family: $Bebas;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+
+  color: $white;
+  margin: 0;
+
+  margin-top: 60px;
+}
+
+.feedback-form form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 410px;
+  outline: 1px solid red;
+
+  margin-top: 33px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  height: 55px;
+  background: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $white;
+  border: 3px solid $white;
+
+  cursor: pointer;
+  margin-top: 29px;
+}
+
+.feedback-contacts {
+  width: 50%;
+  outline: 1px solid green;
+}
+
+
+.callback-popup-form__input-name,
+.callback-popup-form__input-phone {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 190px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 14px;
+  outline: none;
+
+  background-color: transparent;
+
+  color: #ffffff;
+}
+
+.callback-popup-form__label-name,
+.callback-popup-form__label-phone {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $white;
+
+  position: absolute;
+  top: -21px;
+  left: 0;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+
+.callback-popup-form__label-box {
+  position: relative;
+  width: 100%;
+}
+
+.callback-popup-form__label-box::before {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  content: "";
+  transition-duration: 0.2s;
+  transition-property: width;
+}
+
+.callback-popup-form__label-box::before {
+  left: 0;
+}
+
+input:focus ~ .callback-popup-form__label-box::before {
+  width: 100%;
+}
+
+.callback-popup-form__input-name:focus ~ .callback-popup-form__label-box .callback-popup-form__label-name,
+.callback-popup-form__input-name:valid ~ .callback-popup-form__label-box .callback-popup-form__label-name,
+.callback-popup-form__input-phone:focus ~ .callback-popup-form__label-box .callback-popup-form__label-phone,
+.callback-popup-form__input-phone:valid ~ .callback-popup-form__label-box .callback-popup-form__label-phone {
+  transform: translateY(-20px);
+}
+
+/*Контакты*/
+
+.feedback-contacts__title {
+  font-family: $Bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  color: $dark-blue;
+  margin: 0;
+  margin-left: 120px;
+  margin-top: 70px;
+}
+
+.feedback-contacts__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: space-between;
+  width: 70%;
+  margin-top: 40px;
+  margin-left: 123px;
+
+  outline: 1px solid red;
+}
+
+.feedback-contacts__item {
+  margin-bottom: 18px;
+
+  &--adress {
+    margin-right: 31%;
+    }
+
+  &--phone {
+  margin-left: -3px;
+  }
+}
+
+.feedback-contacts__item h3 {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #102654;
+  margin: 0;
+}
+
+.feedback-contacts__item p,
+.feedback-contacts__item address {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #102654;
+  margin: 0;
+
+  margin-top: 4px;
+}
+
+.feedback-contacts__item a {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #102654;
+}
