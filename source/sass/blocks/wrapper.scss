@@ -3,8 +3,6 @@
   margin: 0 auto;
   padding: 0 103px;
 
-  outline: 1px solid hotpink;
-
   &--header {
     display: flex;
     justify-content: space-between;
@@ -34,6 +32,13 @@
   &--feedback {
     display: flex;
   }
+
+  &--footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
 }
 
 
@@ -50,14 +55,25 @@
       flex-direction: column;
       align-items: center;
     }
+
+    &--feedback {
+      flex-direction: column;
+    }
+
+    &--events {
+      justify-content: center;
+    }
+
+    &--footer {
+      padding-top: 45px;
+      padding-bottom: 40px;
+    }
   }
 }
 
 @media (max-width: $mobile) {
   .wrapper {
     padding: 0 15px;
-
-    outline: 1px solid blue;
 
     &--gym {
       padding: 0;
@@ -77,5 +93,11 @@
       padding: 0;
     }
 
+    &--footer {
+      flex-direction: column;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      position: relative;
+    }
   }
 }

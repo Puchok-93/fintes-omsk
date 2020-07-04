@@ -1,10 +1,10 @@
 .feedback {
   background-image:linear-gradient(to right, #102654 50%, #ffffff 50%);
+  padding-bottom: 46px;
 }
 
 .feedback-form {
   width: 50%;
-  outline: 1px solid red;
 }
 
 .feedback-form__title {
@@ -25,7 +25,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 410px;
-  outline: 1px solid red;
 
   margin-top: 33px;
 }
@@ -53,16 +52,22 @@ button[type="submit"] {
 
   cursor: pointer;
   margin-top: 29px;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $dark-blue;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
-.feedback-contacts {
-  width: 50%;
-  outline: 1px solid green;
-}
 
-
-.callback-popup-form__input-name,
-.callback-popup-form__input-phone {
+.feedback-form__input-name,
+.feedback-form__input-phone {
   box-sizing: border-box;
   padding: 5px;
   width: 190px;
@@ -76,8 +81,8 @@ button[type="submit"] {
   color: #ffffff;
 }
 
-.callback-popup-form__label-name,
-.callback-popup-form__label-phone {
+.feedback-form__label-name,
+.feedback-form__label-phone {
   font-family: $RobotoCondensed;
   font-style: normal;
   font-weight: normal;
@@ -93,12 +98,12 @@ button[type="submit"] {
   pointer-events: none;
 }
 
-.callback-popup-form__label-box {
+.feedback-form__label-box {
   position: relative;
   width: 100%;
 }
 
-.callback-popup-form__label-box::before {
+.feedback-form__label-box::before {
   position: absolute;
   bottom: 0;
   width: 0;
@@ -109,87 +114,84 @@ button[type="submit"] {
   transition-property: width;
 }
 
-.callback-popup-form__label-box::before {
+.feedback-form__label-box::before {
   left: 0;
 }
 
-input:focus ~ .callback-popup-form__label-box::before {
+input:focus ~ .feedback-form__label-box::before {
   width: 100%;
 }
 
-.callback-popup-form__input-name:focus ~ .callback-popup-form__label-box .callback-popup-form__label-name,
-.callback-popup-form__input-name:valid ~ .callback-popup-form__label-box .callback-popup-form__label-name,
-.callback-popup-form__input-phone:focus ~ .callback-popup-form__label-box .callback-popup-form__label-phone,
-.callback-popup-form__input-phone:valid ~ .callback-popup-form__label-box .callback-popup-form__label-phone {
+.feedback-form__input-name:focus ~ .feedback-form__label-box .feedback-form__label-name,
+.feedback-form__input-name:valid ~ .feedback-form__label-box .feedback-form__label-name,
+.feedback-form__input-phone:focus ~ .feedback-form__label-box .feedback-form__label-phone,
+.feedback-form__input-phone:valid ~ .feedback-form__label-box .feedback-form__label-phone {
   transform: translateY(-20px);
 }
 
-/*Контакты*/
 
-.feedback-contacts__title {
-  font-family: $Bebas;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
+@media (max-width: $tablet) {
+  .feedback-form {
+    width: 100%;
+  }
 
-  color: $dark-blue;
-  margin: 0;
-  margin-left: 120px;
-  margin-top: 70px;
+  .feedback-form__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-top: 69px;
+    margin-left: 88px;
+  }
+
+  .feedback-form form {
+    width: 70%;
+    margin-left: 13%;
+  }
+
+  .feedback-form__input-name,
+  .feedback-form__input-phone {
+  width: 208px;
+
 }
 
-.feedback-contacts__list {
-  @include list-reset();
-  display: flex;
-  flex-wrap: wrap;
-  //justify-content: space-between;
-  width: 70%;
-  margin-top: 40px;
-  margin-left: 123px;
-
-  outline: 1px solid red;
-}
-
-.feedback-contacts__item {
-  margin-bottom: 18px;
-
-  &--adress {
-    margin-right: 31%;
-    }
-
-  &--phone {
-  margin-left: -3px;
+  .feedback {
+    background-image:linear-gradient(to bottom, #102654 48%, #ffffff 48%);
   }
 }
 
-.feedback-contacts__item h3 {
-  font-family: $RobotoCondensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #102654;
-  margin: 0;
-}
+@media (max-width: $mobile) {
+  .feedback {
+    background-image:linear-gradient(to bottom, #102654 43.3%, #ffffff 43.3%);
+  }
 
-.feedback-contacts__item p,
-.feedback-contacts__item address {
-  font-family: $RobotoCondensed;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: #102654;
-  margin: 0;
+  .feedback-form {
+    width: 100%;
+  }
 
-  margin-top: 4px;
-}
+  .feedback-form__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0;
+    margin-top: 68px;
+  }
 
-.feedback-contacts__item a {
-  font-family: $RobotoCondensed;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: #102654;
+  .feedback-form form {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 36px;
+  }
+
+
+  .feedback-form__input-name,
+  .feedback-form__input-phone {
+    width: 100%;
+  }
+
+  form div {
+    margin-bottom: 17px;
+  }
+
+  button[type="submit"] {
+    margin-top: 4px;
+  }
 }

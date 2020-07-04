@@ -1,0 +1,155 @@
+footer {
+  background-color: #030A1A;
+}
+
+.footer__logo {
+  width: 89px;
+  height: 20px;
+}
+
+.footer-navigation {
+  @include list-reset();
+  display: flex;
+  margin-left: 59px;
+}
+
+.footer-navigation a {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+
+  color: $white;
+  margin-right: 40px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.footer-social-list {
+  @include list-reset();
+  display: flex;
+  width: 110px;
+  justify-content: space-between;
+  margin-top: -1px;
+}
+
+.footer-social-list a {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.footer-social-list__icon {
+  &--vk {
+    width: 24px;
+    height: 13px;
+  }
+
+  &--instagram {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--fb {
+    width: 12px;
+    height: 24px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .footer__logo {
+    width: 82px;
+    height: 20px;
+  }
+
+
+.footer-navigation {
+  width: 391px;
+  margin-left: 19px;
+}
+
+.footer-navigation a {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+
+  color: $white;
+  margin-right: 30px;
+}
+
+.footer-social-list {
+  @include list-reset();
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  margin-top: -1px;
+}
+
+.footer-social-list__icon {
+    &--vk {
+      margin-top: 4px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .footer__logo {
+    width: 68px;
+    height: 15px;
+    position: absolute;
+    top: 51px;
+  }
+
+  .footer-navigation {
+    width: 290px;
+    display: block;
+    column-count: 2;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .footer-navigation__item {
+    margin-top: 21px;
+    margin-left: 3px;
+
+    &:first-child {
+      margin-top: 40px;
+    }
+  }
+
+  .footer-navigation__item a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footer-social-list {
+    width: 145px;
+    margin-top: 25px;
+  }
+
+  .footer-social-list__icon {
+    &--vk {
+      width: 32px;
+      height: 17px;
+    }
+
+    &--instagram {
+      width: 27px;
+      height: 27px;
+    }
+
+    &--fb {
+      width: 17px;
+      height: 27px;
+    }
+  }
+}

@@ -45,6 +45,7 @@
   font-size: 16px;
   line-height: 24px;
   color: $dark-blue;
+  letter-spacing: -0.05px;
 
   margin: 0;
   margin-left: 60px;
@@ -83,8 +84,44 @@
     left: 0;
     background-color: #14367A;
     opacity: 0.5;
+    z-index: 1;
   }
 }
+
+.gym__video-button {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(44.89deg,#003d85 25.38%,#b80027 74.89%);
+    left: 50%;
+    margin-left: -36px;
+    top: 49%;
+    margin-top: -36px;
+    cursor: pointer;
+    transition: box-shadow .3s;
+    border: none;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 100px;
+      top: -14px;
+      left: -14px;
+      background-image: url("../img/circle-desktop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .gym__icon-play {
+    width: 17px;
+    height: 17px;
+    margin-top: 2px;
+    margin-left: 5px;
+  }
 
 @media (max-width: $tablet) {
   .gym__info-block {
@@ -99,8 +136,6 @@
     line-height: 42px;
 
     margin: 0;
-    //margin-left: auto;
-    //margin-right: auto;
     padding-top: 100px;
   }
 
@@ -146,6 +181,34 @@
   .gym__image {
     margin-top: 43px;
   }
+
+  .gym__video-button {
+    width: 52px;
+    height: 52px;
+    left: 50%;
+    margin-left: -27px;
+    top: 49%;
+    margin-top: -28px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 72px;
+      height: 72px;
+      top: -10px;
+      left: -10px;
+      background-image: url("../img/circle-tablet.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .gym__icon-play {
+    width: 12px;
+    height: 12px;
+    margin-top: 3px;
+    margin-left: 4px;
+  }
 }
 
 
@@ -163,15 +226,16 @@
     line-height: 32px;
 
     margin-left: 15px;
-    padding-top: 83px;
+    padding-top: 68px;
   }
 
   .gym__subtitle {
     margin-left: 15px;
+    padding-top: 6px;
   }
 
   .gym__description {
-    width: 84%;
+    width: 83%;
     text-align: left;
 
     margin-left: 15px;
@@ -179,7 +243,7 @@
   }
 
   .gym__image {
-    margin-top: 33px;
+    margin-top: 34px;
   }
 
   .gym__video-block {
@@ -194,5 +258,10 @@
 
   .gym__anons-video {
     width: 320px;
+  }
+
+  .gym__video-button {
+    margin-left: -25px;
+    margin-top: -27px;
   }
 }

@@ -1,4 +1,4 @@
-.reviews {
+.responses {
   padding-bottom: 120px;
 }
 
@@ -29,8 +29,6 @@
   min-height: 242px;
   margin-top: 12px;
   box-sizing: border-box;
-
-  background-color: hotpink;
 }
 
 .slider-reviews__controls-list {
@@ -123,7 +121,12 @@
 
 @media (max-width: $tablet) {
 
+  .responses {
+    padding-bottom: 100px;
+  }
+
   .responses__title {
+    width: 122px;
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 0.03em;
@@ -140,7 +143,7 @@
     margin: 0;
     position: relative;
 
-    margin-top: 40px;
+    margin-top: 28px;
 
   }
   .slider-responses__item {
@@ -153,24 +156,34 @@
     cursor: pointer;
 
     img {
-      margin-left: 62px;
+      margin-left: 65px;
       margin-top: 63px;
       border-radius: 50%;
       object-fit: cover;
     }
   }
+
+  .slider-reviews__controls-list {
+    width: 100%;
+    top: 46%;
+    left: 0;
+  }
 }
 
 @media (max-width: $mobile) {
+  .responses {
+    padding-bottom: 70px;
+  }
+
   .slider-responses__wrapper {
     min-height: 335px;
   }
 
   .responses__title {
+    width: 93px;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.03em;
-
     padding-top: 39px;
   }
 
@@ -190,14 +203,19 @@
       flex-direction: column;
       max-width: 226px;
       min-height: 335px;
-      background-color: transparent;
       color: #ffffff;
       display: flex;
       box-sizing: border-box;
       cursor: pointer;
+      position: relative;
 
       img {
         margin: 0;
+        position: absolute;
+        width: 68px;
+        height: 68px;
+        left: 40px;
+        top: 40px;
       }
     }
 
@@ -206,14 +224,17 @@
       margin-top: 0;
 
       h3 {
+        width: 62px;
         font-family: $RobotoCondensed;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
-        line-height: 30px;
+        line-height: 29px;
         color: $white;
 
         margin: 0;
+        margin-top: 45px;
+        margin-left: 96px;
       }
 
       blockquote {
@@ -224,10 +245,27 @@
         font-size: 16px;
         line-height: 22px;
         color: $white;
+        text-align: center;
 
         margin: 0;
-        margin-top: 12px;
+        margin-left: -3px;
+        margin-top: 21px;
         padding-bottom: 20px;
       }
+    }
+
+    .slider-reviews__btn {
+      width: 10px;
+      height: 19px;
+      background-image: url("../img/icon-arrow-next-mobile.svg");
+      background-size: 10px 19px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    .slider-reviews__controls-list {
+      width: 130%;
+      top: 49%;
+      left: -15%;
     }
 }

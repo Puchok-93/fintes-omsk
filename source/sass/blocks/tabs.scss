@@ -1,0 +1,152 @@
+.tabs {
+  width: 100%;
+}
+
+.tabs-content {
+  width: 100%;
+}
+
+.tabs-trigger {
+  width: 360px;
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 341px;
+    height: 2px;
+    bottom: 8px;
+    left: 9px;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+}
+
+.tabs-trigger__item {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: rgba(16, 38, 84, 0.5);
+  cursor: pointer;
+  margin-right: 46px;
+
+  &:first-child {
+    margin-left: 10px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $red;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.tabs-content__item {
+  display: none;
+}
+
+.tabs-trigger__item--active {
+  color: #102654;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -12px;
+    left: 0;
+    background-color: #d10a42;
+  }
+}
+
+.tabs-content__item--active {
+  display: block;
+}
+
+@media (max-width: $tablet) {
+  .tabs-trigger {
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+  &::before {
+      position: absolute;
+      content: "";
+      width: 335px;
+      height: 2px;
+      bottom: 7px;
+      left: 13px;
+      background-color: rgba(120, 120, 120, 0.2);
+    }
+  }
+
+  .tabs-trigger__item {
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 55px;
+
+    &:hover {
+      color: #102654;
+    }
+
+    &:first-child {
+      margin-left: 15px;
+    }
+  }
+
+  .tabs-trigger__item--active {
+    color: #102654;
+
+    &::before {
+      bottom: -13px;
+    }
+  }
+
+  .tabs-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile) {
+  .tabs-trigger {
+    width: 290px;
+    padding-top: 23px;
+
+    &:before {
+      width: 290px;
+      height: 2px;
+      bottom: 6px;
+      left: 0;
+    }
+  }
+
+  .tabs-trigger__item {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 46px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .tabs-trigger__item--active {
+    &::before {
+      bottom: -14px;
+    }
+  }
+}
