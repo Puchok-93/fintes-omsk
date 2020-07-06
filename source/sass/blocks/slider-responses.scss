@@ -1,0 +1,225 @@
+.slider-responses {
+  width: 720px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 52px;
+}
+
+.slider-responses__wrapper {
+  width: 560px;
+  min-height: 242px;
+  margin-top: 12px;
+  box-sizing: border-box;
+}
+
+.slider-reviews__controls-list {
+  display: flex;
+  justify-content: space-between;
+
+  @include list-reset();
+  position: absolute;
+  width: 94%;
+  height: 34px;
+  top: 40%;
+  left: 3%;
+  z-index: 1;
+}
+
+.slider-reviews__btn {
+  width: 18px;
+  height: 34px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  background-image: url("../img/icon-arrow-next.svg");
+  background-size: 16px 32px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.slider-reviews__btn--prev {
+  transform: rotate(180deg);
+}
+
+.slider-responses__list {
+  @include list-reset();
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-responses__item {
+  width: 100%;
+  max-width: 560px;
+  min-height: 242px;
+  background-color: #1c3374;
+
+  color: #ffffff;
+  display: flex;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  img {
+    margin-left: 62px;
+    margin-top: 63px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.swiper-slide-active {
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+}
+
+.slider-responses__text {
+  padding-left: 28px;
+  margin-top: 56px;
+
+  h3 {
+    font-family: $RobotoCondensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+
+    margin: 0;
+  }
+
+  blockquote {
+    width: 328px;
+    font-family: $RobotoCondensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+
+    margin: 0;
+    margin-top: 12px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .swiper-container {
+    width: 566px;
+  }
+
+  .slider-responses {
+    width: 678px;
+    margin: 0;
+    position: relative;
+    margin-top: 28px;
+  }
+
+  .slider-responses__item {
+    max-width: 566px;
+    min-height: 242px;
+    background-color: #1c3374;
+    color: #ffffff;
+    display: flex;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    img {
+      margin-left: 65px;
+      margin-top: 63px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .slider-reviews__controls-list {
+    width: 100%;
+    top: 46%;
+    left: 0;
+  }
+}
+
+@media (max-width: $mobile) {
+  .slider-responses__wrapper {
+    min-height: 335px;
+  }
+
+  .swiper-container {
+    width: 226px;
+  }
+
+  .slider-responses {
+    width: 226px;
+    position: relative;
+    margin: 0;
+    margin-top: 31px;
+  }
+
+  .slider-responses__item {
+    flex-direction: column;
+    max-width: 226px;
+    min-height: 335px;
+    color: #ffffff;
+    display: flex;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+
+    img {
+      margin: 0;
+      position: absolute;
+      width: 68px;
+      height: 68px;
+      left: 40px;
+      top: 40px;
+    }
+  }
+
+  .slider-responses__text {
+    padding-left: 28px;
+    margin-top: 0;
+
+    h3 {
+      width: 62px;
+      font-family: $RobotoCondensed;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 29px;
+      color: $white;
+
+      margin: 0;
+      margin-top: 45px;
+      margin-left: 96px;
+    }
+
+    blockquote {
+      width: 176px;
+      font-family: $RobotoCondensed;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: $white;
+      text-align: center;
+
+      margin: 0;
+      margin-left: -3px;
+      margin-top: 21px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .slider-reviews__btn {
+    width: 10px;
+    height: 19px;
+    background-image: url("../img/icon-arrow-next-mobile.svg");
+    background-size: 10px 19px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .slider-reviews__controls-list {
+    width: 130%;
+    top: 49%;
+    left: -15%;
+  }
+}

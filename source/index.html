@@ -12,15 +12,26 @@
   <link rel="stylesheet" href="css/style.min.css">
   <script>
     document.createElement("picture");
+
   </script>
   <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
+<div style="display: none">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+<div class="content">
   <header>
     <div class="wrapper wrapper--header">
       <a>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/supergym-logo-tablet.webp">
+          <source type="image/webp" media="(min-width: 767px)" srcset="img/supergym-logo-mobile.webp">
+          <source type="image/webp" srcset="img/supergym-logo.webp">
+
+
+
           <source media="(min-width: 1200px)" srcset="img/supergym-logo-tablet.png">
           <source media="(min-width: 767px)" srcset="img/supergym-logo-mobile.png">
           <img class="header__logo" src="img/supergym-logo.png" alt="Лого Supergym">
@@ -41,10 +52,13 @@
             <li class="main-block-list__item">Групповые занятия</li>
             <li class="main-block-list__item">Кардио зона</li>
           </ul>
-          <a class="main-block__link" href="#">Купить абонемент</a>
+          <a class="main-block__link" href="#season-pass">Купить абонемент</a>
         </div>
         <div class="main-block__image-block">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-block-desktop.webp">
+            <source type="image/webp" srcset="img/main-block-tablet.webp">
+
             <source media="(min-width: 1200px)" srcset="img/main-block-desktop.jpg">
             <img class="main-block__image" src="img/main-block-tablet.jpg" width="500" height="556" alt="Лого Supergym">
           </picture>
@@ -80,6 +94,11 @@
         </div>
         <div class="gym__image-block">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-desktop.webp">
+            <source type="image/webp" media="(min-width: 767px)" srcset="img/gym-tablet.webp">
+            <source type="image/webp" srcset="img/gym-mobile.webp">
+
+
             <source media="(min-width: 1200px)" srcset="img/gym-desktop.jpg">
             <source media="(min-width: 768px)" srcset="img/gym-tablet.jpg">
             <img class="gym__image" src="img/gym-mobile.jpg" alt="Фотография зала">
@@ -88,20 +107,25 @@
 
         <div class="gym__video-block">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/anons-video-desktop.webp">
+            <source type="image/webp" media="(min-width: 767px)" srcset="img/anons-video-tablet.webp">
+            <source type="image/webp" srcset="img/anons-video-mobile.webp">
+
             <source media="(min-width: 1200px)" srcset="img/anons-video-desktop.jpg">
             <source media="(min-width: 768px)" srcset="img/anons-video-tablet.jpg">
-            <img class="gym__anons-video" src="img/anons-video-mobile.jpg" width="364" height="228" alt="Анонс видео о зале">
+            <img class="gym__anons-video" src="img/anons-video-mobile.jpg" width="364" height="228"
+              alt="Анонс видео о зале">
           </picture>
           <button class="gym__video-button" type="button">
             <svg class="gym__icon-play">
-              <use xlink:href="img/sprite_auto.svg#icon-triangle"></use>
+              <use xlink:href="#icon-triangle"></use>
             </svg>
           </button>
         </div>
       </div>
     </section>
 
-    <section class="season-pass">
+    <section class="season-pass" id="season-pass">
       <div class="wrapper wrapper--season-pass">
         <h2 class="season-pass__title">Абонементы</h2>
 
@@ -137,19 +161,19 @@
             </div>
             <div id="tab-2" class="tabs-content__item">
               <ul class="season-pass-list">
-                <li class="season-pass-list__item">
+                <li class="season-pass-list__item season-pass-list__item--six-month">
                   <h3 class="season-pass-list__title">С тренером</h3>
                   <p class="season-pass-list__subtitle">12 занятий</p>
                   <p class="season-pass-list__price season-pass-list__price--with-coutch">50000 <span>₽</span></p>
                   <a class="season-pass-list__link" href="#">Купить абонемент</a>
                 </li>
-                <li class="season-pass-list__item">
+                <li class="season-pass-list__item season-pass-list__item--six-month">
                   <h3 class="season-pass-list__title">Дневной</h3>
                   <p class="season-pass-list__subtitle">с 8:00 до 17:00</p>
                   <p class="season-pass-list__price season-pass-list__price--half-day">10200 <span>₽</span></p>
                   <a class="season-pass-list__link" href="#">Купить абонемент</a>
                 </li>
-                <li class="season-pass-list__item">
+                <li class="season-pass-list__item season-pass-list__item--six-month">
                   <h3 class="season-pass-list__title">Полный день</h3>
                   <p class="season-pass-list__subtitle">с 8:00 до 22:00</p>
                   <p class="season-pass-list__price season-pass-list__price--full-day">16200 <span>₽</span></p>
@@ -159,19 +183,19 @@
             </div>
             <div id="tab-3" class="tabs-content__item">
               <ul class="season-pass-list">
-                <li class="season-pass-list__item">
+                <li class="season-pass-list__item season-pass-list__item--twelve-month">
                   <h3 class="season-pass-list__title">С тренером</h3>
                   <p class="season-pass-list__subtitle">12 занятий</p>
                   <p class="season-pass-list__price season-pass-list__price--with-coutch">75000 <span>₽</span></p>
                   <a class="season-pass-list__link" href="#">Купить абонемент</a>
                 </li>
-                <li class="season-pass-list__item">
+                <li class="season-pass-list__item season-pass-list__item--twelve-month">
                   <h3 class="season-pass-list__title">Дневной</h3>
                   <p class="season-pass-list__subtitle">с 8:00 до 17:00</p>
                   <p class="season-pass-list__price season-pass-list__price--half-day">17000 <span>₽</span></p>
                   <a class="season-pass-list__link" href="#">Купить абонемент</a>
                 </li>
-                <li class="season-pass-list__item">
+                <li class="season-pass-list__item season-pass-list__item--twelve-month">
                   <h3 class="season-pass-list__title">Полный день</h3>
                   <p class="season-pass-list__subtitle">с 8:00 до 22:00</p>
                   <p class="season-pass-list__price season-pass-list__price--full-day">27000 <span>₽</span></p>
@@ -190,31 +214,31 @@
       <div class="wrapper wrapper--events">
         <h2 class="visually-hidden">События</h2>
 
-        <div class="test">
-          <div class="events__info-block">
-            <h4 class="events__title">Super games</h4>
+        <div class="event">
+          <div class="event__info-block">
+            <h4 class="event__title">Super games</h4>
             <div>
-              <div class="events__date-block">
-                <p class="events__date-title">Дата</p>
-                <p class="events__date-number">7</p>
+              <div class="event__date-block">
+                <p class="event__date-title">Дата</p>
+                <p class="event__date-number">7</p>
               </div>
-              <div class="events__time-block">
-                <p class="events__time-title">Время</p>
-                <p class="events__time-number">12:00</p>
+              <div class="event__time-block">
+                <p class="event__time-title">Время</p>
+                <p class="event__time-number">12:00</p>
               </div>
             </div>
-            <p class="events__description">Ежегодные соревнования по CrossFit</p>
-            <a class="events__link" href="#">Заполнить заявку</a>
+            <p class="event__description">Ежегодные соревнования по CrossFit</p>
+            <a class="event__link" href="#">Заполнить заявку</a>
           </div>
         </div>
 
-        <div class="events__image-block">
+        <div class="event__image-block">
 
         </div>
       </div>
     </section>
 
-    <section class="coaches container-slider" id="coaches">
+    <section class="coaches">
       <div class="wrapper">
         <h2 class="coaches__title">Тренеры</h2>
       </div>
@@ -223,10 +247,10 @@
 
         <ul class="slider__controls-list">
           <li class="slider__controls-item">
-            <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий слайд"></button>
+            <button class="slider__button slider__button--prev" type="button" aria-label="Предыдущий слайд"></button>
           </li>
           <li class="slider__control-item">
-            <button class="slider__btn slider__btn--next" type="button" aria-label="Предыдущий слайд"></button>
+            <button class="slider__button slider__button--next" type="button" aria-label="Предыдущий слайд"></button>
           </li>
         </ul>
 
@@ -234,7 +258,10 @@
           <ul class="slider__list swiper-wrapper">
 
             <li class="slider__item swiper-slide">
-              <img src="img/avatar-anna.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+              <picture>
+                <source type="image/webp" srcset="img/avatar-anna.webp">
+                <img src="img/avatar-anna.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+              </picture>
               <p class="slider__title">Анна Павлова</p>
               <div class="slider__information">
                 <p class="slider__name">Анна Павлова</p>
@@ -254,7 +281,10 @@
             </li>
 
             <li class="slider__item swiper-slide">
-              <img src="img/avatar-aleksey.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+              <picture>
+                <source type="image/webp" srcset="img/avatar-aleksey.webp">
+                <img src="img/avatar-aleksey.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+              </picture>
               <p class="slider__title">Алексей Лавров</p>
               <div class="slider__information">
                 <p class="slider__name">Алексей Лавров</p>
@@ -274,7 +304,10 @@
             </li>
 
             <li class="slider__item swiper-slide">
-              <img src="img/avatar-alex.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+              <picture>
+                <source type="image/webp" srcset="img/avatar-alex.webp">
+                <img src="img/avatar-alex.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+              </picture>
               <p class="slider__title">Александр Пашков</p>
               <div class="slider__information">
                 <p class="slider__name">Александр Пашков</p>
@@ -294,7 +327,10 @@
             </li>
 
             <li class="slider__item swiper-slide">
-              <img src="img/avatar-maria.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+              <picture>
+                <source type="image/webp" srcset="img/avatar-maria.webp">
+                <img src="img/avatar-maria.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+              </picture>
               <p class="slider__title">Мария Кетова</p>
 
               <div class="slider__information">
@@ -313,6 +349,93 @@
                 </ul>
               </div>
             </li>
+
+            <li class="slider__item swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="img/avatars.webp">
+                <img src="img/avatars.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+              </picture>
+              <p class="slider__title">Илья Петров</p>
+
+              <div class="slider__information">
+                <p class="slider__name">Илья Петров</p>
+                <p class="slider__sport">Powerlifting</p>
+                <ul class="slider__achievement-list">
+                  <li class="slider__achievement">
+                    Certified Level 2 Trainer
+                  </li>
+                  <li class="slider__achievement">
+                    Чемпион России по Powerlifting
+                  </li>
+                  <li class="slider__achievement">
+                    Опыт — 5 лет
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="slider__item swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="img/avatars.webp">
+                <img src="img/avatars.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+              </picture>
+              <p class="slider__title">Александра Иванова</p>
+
+              <div class="slider__information">
+                <p class="slider__name">Александра Иванова</p>
+                <p class="slider__sport">Yoga</p>
+                <ul class="slider__achievement-list">
+                  <li class="slider__achievement">
+                    Certified Level 2 Trainer
+                  </li>
+                  <li class="slider__achievement">
+                    Опыт — 4 года
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+                        <li class="slider__item swiper-slide">
+                          <picture>
+                            <source type="image/webp" srcset="img/avatars.webp">
+                            <img src="img/avatars.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+                          </picture>
+                          <p class="slider__title">Антон Сидоров</p>
+
+                          <div class="slider__information">
+                            <p class="slider__name">Антон Сидоров</p>
+                            <p class="slider__sport">CrossFit</p>
+                            <ul class="slider__achievement-list">
+                              <li class="slider__achievement">
+                                Certified Level 2 Trainer
+                              </li>
+                              <li class="slider__achievement">
+                                Опыт — 2 года
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+
+                        <li class="slider__item swiper-slide">
+                          <picture>
+                            <source type="image/webp" srcset="img/avatars.webp">
+                            <img src="img/avatars.jpg" width="260" height="294" alt="Фотография Анны Павловой">
+                          </picture>
+                          <p class="slider__title">Ирина Антонова</p>
+
+                          <div class="slider__information">
+                            <p class="slider__name">Ирина Антонова</p>
+                            <p class="slider__sport">Pilates</p>
+                            <ul class="slider__achievement-list">
+                              <li class="slider__achievement">
+                                Certified Level 2 Trainer
+                              </li>
+                              <li class="slider__achievement">
+                                Опыт — 3 года
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
 
           </ul>
         </div>
@@ -393,7 +516,9 @@
           <div class="slider-responses__wrapper swiper-container">
             <ul class="slider-responses__list  swiper-wrapper">
               <li class="slider-responses__item swiper-slide">
+
                 <img src="img/avatar-response.png" width="80" height="80" alt="Фотография Анны">
+
                 <div class="slider-responses__text">
                   <h3>Анна Орлова</h3>
                   <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда
@@ -403,8 +528,10 @@
                 </div>
               </li>
               <li class="slider-responses__item swiper-slide">
+
                 <img src="img/avatar-response.png" width="80" height="80" alt="Фотография Анны">
                 <div class="slider-responses__text">
+
                   <h3>Иван Иванов</h3>
                   <blockquote>«Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi,
@@ -414,7 +541,9 @@
                 </div>
               </li>
               <li class="slider-responses__item swiper-slide">
+
                 <img src="img/avatar-response.png" width="80" height="80" alt="Фотография Анны">
+
                 <div class="slider-responses__text">
                   <h3>Пётр Петров</h3>
                   <blockquote>«Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -446,7 +575,7 @@
         <div class="feedback-form">
           <h2 class="feedback-form__title">Бесплатное занятие</h2>
           <form>
-            <div class="test3">
+            <div>
               <input class="feedback-form__input-name" type="text" required>
               <div class="feedback-form__label-box">
                 <label class="feedback-form__label-name">Имя</label>
@@ -492,12 +621,16 @@
         </div>
       </div>
     </section>
-
   </main>
+</div>
   <footer>
     <div class="wrapper wrapper--footer">
       <a>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/supergym-logo-tablet.webp">
+          <source type="image/webp" media="(min-width: 767px)" srcset="img/supergym-logo-mobile.webp">
+          <source type="image/webp" srcset="img/supergym-logo.webp">
+
           <source media="(min-width: 1200px)" srcset="img/supergym-logo-tablet.png">
           <source media="(min-width: 767px)" srcset="img/supergym-logo-mobile.png">
           <img class="footer__logo" src="img/supergym-logo.png" alt="Лого Supergym">
@@ -526,21 +659,21 @@
         <li>
           <a href="#">
             <svg class="footer-social-list__icon footer-social-list__icon--vk">
-              <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li>
           <a href="#">
             <svg class="footer-social-list__icon footer-social-list__icon--instagram">
-              <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+              <use xlink:href="#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li>
           <a href="#">
             <svg class="footer-social-list__icon footer-social-list__icon--fb">
-              <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -550,5 +683,4 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>

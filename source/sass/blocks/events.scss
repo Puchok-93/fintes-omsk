@@ -1,14 +1,15 @@
 .events {
-  padding-top: 120px;
+  background-color: $white;
+  padding-top: 50px;
 }
 
-.test {
+.event {
   background-color: $red;
   width: 500px;
   min-height: 500px;
 }
 
-.events__info-block {
+.event__info-block {
   display: flex;
   flex-wrap: wrap;
   width: 400px;
@@ -17,7 +18,7 @@
   margin-top: 84px;
 }
 
-.events__title {
+.event__title {
   width: 201px;
   font-family: $Bebas;
   font-size: 90px;
@@ -28,7 +29,7 @@
   margin: 0;
 }
 
-.events__date-block {
+.event__date-block {
   width: 70px;
   margin-left: 50px;
   margin-top: -3px;
@@ -46,7 +47,7 @@
   }
 }
 
-.events__date-title {
+.event__date-title {
   font-family: $RobotoCondensed;
   font-style: normal;
   font-weight: normal;
@@ -56,7 +57,7 @@
   margin: 0;
 }
 
-.events__date-number {
+.event__date-number {
   font-family: $RobotoCondensed;
   font-style: normal;
   font-weight: normal;
@@ -91,7 +92,7 @@
   }
 }
 
-.events__time-block {
+.event__time-block {
   width: 90px;
   margin-left: 50px;
   margin-top: 8px;
@@ -109,7 +110,7 @@
   }
 }
 
-.events__time-title {
+.event__time-title {
   font-family: $RobotoCondensed;
   font-style: normal;
   font-weight: normal;
@@ -119,7 +120,7 @@
   margin: 0;
 }
 
-.events__time-number {
+.event__time-number {
   font-family: $RobotoCondensed;
   font-style: normal;
   font-weight: bold;
@@ -129,7 +130,7 @@
   margin: 0;
 }
 
-.events__description {
+.event__description {
   font-family: $RobotoCondensed;
   font-style: normal;
   font-weight: normal;
@@ -141,7 +142,7 @@
   margin-top: 9px;
 }
 
-.events__link {
+.event__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,7 +176,7 @@
   }
 }
 
-.events__image-block {
+.event__image-block {
   width: 57%;
   background-color: #000145;
   background-image: url("../img/events-block-desktop.jpg");
@@ -186,27 +187,27 @@
 
 @media (max-width: $tablet) {
   .events {
-    padding-top: 100px;
+    padding-top: 48px;
   }
 
-  .test {
+  .event {
     width: 292px;
     min-height: 292px;
   }
 
-  .events__info-block {
+  .event__info-block {
     width: 292px;
     margin-left: 45px;
     margin-top: 50px;
   }
 
-  .events__title {
+  .event__title {
     width: 117px;
     font-size: 52px;
     line-height: 52px;
   }
 
-  .events__date-block {
+  .event__date-block {
     width: 70px;
     margin-left: 30px;
     margin-top: -3px;
@@ -220,12 +221,12 @@
     }
   }
 
-  .events__date-title {
+  .event__date-title {
     font-size: 12px;
     line-height: 18px;
   }
 
-  .events__date-number {
+  .event__date-number {
     font-size: 24px;
     line-height: 36px;
 
@@ -244,7 +245,7 @@
     }
   }
 
-  .events__time-block {
+  .event__time-block {
     width: 90px;
     margin-left: 30px;
     margin-top: 0;
@@ -255,25 +256,25 @@
     }
   }
 
-  .events__time-title {
+  .event__time-title {
     font-size: 12px;
     line-height: 18px;
   }
 
-  .events__time-number {
+  .event__time-number {
     font-size: 24px;
     line-height: 36px;
 
     margin-top: -2px;
   }
 
-  .events__description {
+  .event__description {
     font-size: 12px;
     line-height: 18px;
     margin-top: 0;
   }
 
-  .events__link {
+  .event__link {
     width: 200px;
     height: 37px;
 
@@ -290,7 +291,7 @@
     padding-top: 75px;
   }
 
-  .events__image-block {
+  .event__image-block {
     width: 100%;
     min-height: 291px;
     background-color: #000145;
@@ -300,18 +301,18 @@
     background-size: cover;
   }
 
-  .test {
+  .event {
     width: 100%;
     min-height: 292px;
   }
 
-  .events__info-block {
+  .event__info-block {
     width: 240px;
     margin-left: 45px;
     margin-top: 48px;
   }
 
-  .events__link {
+  .event__link {
     width: 200px;
     height: 37px;
     margin-top: 30px;

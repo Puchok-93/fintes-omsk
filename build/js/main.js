@@ -39,15 +39,13 @@ const slideReviewsrBlock = document.querySelector(`.slider-responses__wrapper`);
       });
     }
 
-
-
   const sliderBlock = document.querySelector(`.slider__wrapper`);
   if (sliderBlock) {
     const mainSlider = new Swiper(`.slider__wrapper`, {
       loop: true,
       navigation: {
-        nextEl: `.slider__btn--next`,
-        prevEl: `.slider__btn--prev`
+        nextEl: `.slider__button--next`,
+        prevEl: `.slider__button--prev`
       },
       breakpoints: {
         320: {

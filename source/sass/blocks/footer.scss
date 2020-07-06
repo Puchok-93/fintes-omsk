@@ -1,5 +1,5 @@
 footer {
-  background-color: #030A1A;
+  background-color: #030a1a;
 }
 
 .footer__logo {
@@ -68,33 +68,31 @@ footer {
     height: 20px;
   }
 
+  .footer-navigation {
+    width: 391px;
+    margin-left: 19px;
+  }
 
-.footer-navigation {
-  width: 391px;
-  margin-left: 19px;
-}
+  .footer-navigation a {
+    font-family: $RobotoCondensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: $white;
+    margin-right: 30px;
+  }
 
-.footer-navigation a {
-  font-family: $RobotoCondensed;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
+  .footer-social-list {
+    @include list-reset();
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin-top: -1px;
+  }
 
-  color: $white;
-  margin-right: 30px;
-}
-
-.footer-social-list {
-  @include list-reset();
-  display: flex;
-  width: 100px;
-  justify-content: space-between;
-  margin-top: -1px;
-}
-
-.footer-social-list__icon {
+  .footer-social-list__icon {
     &--vk {
       margin-top: 4px;
     }

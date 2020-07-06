@@ -1,5 +1,5 @@
 .advantages {
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
   padding-bottom: 120px;
 }
 
@@ -56,7 +56,7 @@
   }
 }
 
-.advantages-list__title  {
+.advantages-list__title {
   font-family: $RobotoCondensed;
   font-style: normal;
   font-weight: bold;
@@ -159,21 +159,6 @@
     padding-top: 6px;
     margin-left: 142px;
   }
-
-}
-
-/*---------------------------------------------*/
-
-
-/*Второй*/
-.advantages-second-block__title {
-  font-family: $RobotoCondensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 39px;
-  color: $white;
-  margin: 0;
 }
 
 .advantages-second-block {
@@ -182,7 +167,7 @@
   flex-direction: column;
   width: 20.6%;
   height: 307px;
-  background-color: #1C3374;
+  background-color: #1c3374;
   position: absolute;
 
   left: 39.8%;
@@ -215,7 +200,6 @@
   }
 }
 
-
 .advantages-second-block__description {
   width: 172px;
   font-family: $RobotoCondensed;
@@ -226,10 +210,8 @@
   text-align: center;
   color: $white;
   margin: 0;
-
   padding-top: 30px;
 }
-
 
 @media (max-width: $tablet) {
   .advantages {
@@ -262,7 +244,7 @@
     }
   }
 
-  .advantages-list__title  {
+  .advantages-list__title {
     font-size: 20px;
     line-height: 30px;
 
@@ -351,13 +333,12 @@
     width: 442px;
     height: 239px;
     top: 112px;
-    left: calc(50% - 442px/2);
+    left: calc(50% - 442px / 2);
   }
 
   .advantages-second-block__title {
     font-size: 22px;
     line-height: 33px;
-
     padding-top: 105px;
 
     &::before {
@@ -366,14 +347,12 @@
     }
   }
 
-
   .advantages-second-block__description {
     padding-top: 13px;
   }
 }
 
 @media (max-width: $mobile) {
-
   .advantages {
     padding-bottom: 63px;
   }
@@ -384,10 +363,9 @@
     padding-top: 66px;
   }
 
-
-.advantages-blocks {
-  margin-top: 0;
-}
+  .advantages-blocks {
+    margin-top: 0;
+  }
 
   .advantages-list {
     flex-direction: column;
@@ -401,7 +379,6 @@
     }
   }
 
-
   .advantages-list__item {
     width: 100%;
     display: flex;
@@ -409,7 +386,7 @@
     align-items: center;
   }
 
-  .advantages-list__title  {
+  .advantages-list__title {
     margin-left: 0;
 
     &--area {
@@ -494,11 +471,12 @@
     width: 320px;
     height: 239px;
     top: 437px;
-    left: calc(50% - 320px/2);
+    left: calc(50% - 320px / 2);
   }
 
   .advantages-second-block__title {
     padding-top: 105px;
+
     &::before {
       top: 19px;
       left: -1px;

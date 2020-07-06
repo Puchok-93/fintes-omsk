@@ -83,7 +83,7 @@
     padding-top: 30px;
     padding-bottom: 20px;
 
-  &::before {
+    &::before {
       position: absolute;
       content: "";
       width: 335px;
@@ -126,7 +126,7 @@
     width: 290px;
     padding-top: 23px;
 
-    &:before {
+    &::before {
       width: 290px;
       height: 2px;
       bottom: 6px;

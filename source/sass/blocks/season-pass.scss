@@ -1,6 +1,9 @@
 .season-pass {
   background-color: #f8f9fc;
-  padding-bottom: 120px;
+  padding-bottom: 190px;
+  background-image: url("../img/dumbbells-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 92.5% 508px;
 }
 
 .season-pass__title {
@@ -59,7 +62,7 @@
   font-size: 16px;
   line-height: 24px;
 
-  color: #495A7D;
+  color: #495a7d;
   margin: 0;
 
   padding-top: 10px;
@@ -72,7 +75,7 @@
   font-size: 60px;
   line-height: 90px;
 
-  color: #103AAE;
+  color: #103aae;
   margin: 0;
   margin-left: 2px;
   padding-top: 65px;
@@ -104,6 +107,34 @@
 
   &--full-day::before {
     content: "2700";
+  }
+}
+
+.season-pass-list__item--six-month .season-pass-list__price {
+  &--with-coutch::before {
+    content: "50000";
+  }
+
+  &--half-day::before {
+    content: "10200";
+  }
+
+  &--full-day::before {
+    content: "16200";
+  }
+}
+
+.season-pass-list__item--twelve-month .season-pass-list__price {
+  &--with-coutch::before {
+    content: "75000";
+  }
+
+  &--half-day::before {
+    content: "17000";
+  }
+
+  &--full-day::before {
+    content: "27000";
   }
 }
 
@@ -147,9 +178,23 @@
   }
 }
 
+.season-pass-list__shadow {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 150px;
+  color: #e8e8e8;
+  opacity: 0.48;
+    margin: 0;
+}
+
 @media (max-width: $tablet) {
   .season-pass {
-    padding-bottom: 60px;
+    padding-bottom: 112px;
+    background-image: url("../img/dumbbells-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 122% 105.3%;
   }
 
   .season-pass__title {
@@ -162,13 +207,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin-top: 37px;
   }
-/*
-  .season-pass-list__item {
-    width: 100%;
-  }*/
 
   .season-pass-list__item {
     width: 65%;
@@ -186,6 +226,7 @@
 @media (max-width: $mobile) {
   .season-pass {
     padding-bottom: 69px;
+    background-image: none;
   }
 
   .season-pass__title {

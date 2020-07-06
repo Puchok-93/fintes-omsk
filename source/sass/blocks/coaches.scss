@@ -1,0 +1,41 @@
+.coaches {
+  padding-bottom: 118px;
+}
+
+.coaches__title {
+  font-family: $Bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  color: #102654;
+  margin: 0;
+  margin-left: 2px;
+  padding-top: 118px;
+}
+
+@media (max-width: $tablet) {
+  .coaches__title {
+    width: 129px;
+    font-size: 42px;
+    line-height: 42px;
+
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 99px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .coaches {
+    padding-bottom: 75px;
+  }
+
+  .coaches__title {
+    width: 99px;
+    font-size: 32px;
+    line-height: 32px;
+    padding-top: 69px;
+  }
+}

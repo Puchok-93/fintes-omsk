@@ -3,25 +3,14 @@
 }
 
 .gym__title {
-  //width: 90%;
   font-family: $Bebas;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
-
   color: $dark-blue;
-
   margin: 0;
   margin-left: 60px;
   padding-top: 168px;
-}
-
-.gym__info-block {
-  outline: 1px solid green;
-}
-
-.gym__image-block {
-  outline: 1px solid green;
 }
 
 .gym__subtitle {
@@ -31,7 +20,6 @@
   font-size: 18px;
   line-height: 27px;
   color: $dark-blue;
-
   margin: 0;
   margin-left: 60px;
   padding-top: 9px;
@@ -46,7 +34,6 @@
   line-height: 24px;
   color: $dark-blue;
   letter-spacing: -0.05px;
-
   margin: 0;
   margin-left: 60px;
   padding-top: 38px;
@@ -64,7 +51,6 @@
   display: block;
   max-width: 100%;
   height: auto;
-
   margin-top: 121px;
 }
 
@@ -72,7 +58,6 @@
   margin-left: 437px;
   margin-right: auto;
   margin-top: -113px;
-
   position: relative;
 
   &::before {
@@ -82,46 +67,46 @@
     height: 228px;
     top: 0;
     left: 0;
-    background-color: #14367A;
+    background-color: #14367a;
     opacity: 0.5;
     z-index: 1;
   }
 }
 
 .gym__video-button {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  left: 50%;
+  margin-left: -36px;
+  top: 49%;
+  margin-top: -36px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  border: none;
+  z-index: 1;
+
+  &::before {
     position: absolute;
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    background: linear-gradient(44.89deg,#003d85 25.38%,#b80027 74.89%);
-    left: 50%;
-    margin-left: -36px;
-    top: 49%;
-    margin-top: -36px;
-    cursor: pointer;
-    transition: box-shadow .3s;
-    border: none;
-    z-index: 1;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 100px;
-      height: 100px;
-      top: -14px;
-      left: -14px;
-      background-image: url("../img/circle-desktop.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+    content: "";
+    width: 100px;
+    height: 100px;
+    top: -14px;
+    left: -14px;
+    background-image: url("../img/circle-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+}
 
-  .gym__icon-play {
-    width: 17px;
-    height: 17px;
-    margin-top: 2px;
-    margin-left: 5px;
-  }
+.gym__icon-play {
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+  margin-left: 5px;
+}
 
 @media (max-width: $tablet) {
   .gym__info-block {
@@ -134,7 +119,6 @@
   .gym__title {
     font-size: 42px;
     line-height: 42px;
-
     margin: 0;
     padding-top: 100px;
   }
@@ -158,7 +142,6 @@
   .gym__description {
     width: 512px;
     text-align: center;
-
     margin: 0;
     padding-top: 35px;
 
