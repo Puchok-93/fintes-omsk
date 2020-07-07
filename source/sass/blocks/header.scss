@@ -1,3 +1,7 @@
+header {
+  background-color: $red;
+}
+
 .header__logo {
   width: 89px;
   height: 20px;
@@ -20,6 +24,7 @@
   &:focus {
     border-bottom: 2px solid white;
     height: 24px;
+    transition: 0.3s;
   }
 
   &:active {

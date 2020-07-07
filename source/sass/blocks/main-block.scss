@@ -1,5 +1,7 @@
 .main-block {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background-color: $red;
+  background-image: url("../img/main-background.png");
+  background-size: cover;
   min-height: 658px;
 
   margin-top: -55px;
@@ -13,19 +15,21 @@
 
   padding-top: 170px;
   padding-bottom: 80px;
-  position: relative;
+  outline: 1px solid yellow;
 }
 
 .main-block__title {
+  display: block;
   width: 298px;
   font-family: $Bebas;
   font-weight: 700;
-  font-size: 109px;
+  font-size: 110px;
   line-height: 109px;
   text-align: right;
   letter-spacing: 0.03em;
-
+  position: relative;
   color: $white;
+  outline: 1px solid yellow;
 
   margin: 0;
   margin-left: 97px;
@@ -47,10 +51,9 @@
 .main-block-list {
   @include list-reset();
   order: 3;
-
   position: absolute;
   bottom: 225px;
-  left: 20px;
+  left: 122px;
 }
 
 .main-block-list__item {
@@ -79,7 +82,6 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-decoration: none;
-
   color: $white;
 
   border: 4px solid $white;
@@ -91,6 +93,7 @@
   &:focus {
     background-color: $white;
     color: $red;
+    transition: 0.3s;
   }
 
   &:active {
@@ -101,10 +104,12 @@
 .main-block__image-block {
   margin-top: 52px;
   margin-left: -126px;
+  outline: 1px solid lime;
 }
 
 @media (max-width: $tablet) {
   .main-block {
+    background-image: url("../img/main-background-tablet.png");
     min-height: 554px;
     margin-top: -62px;
   }
@@ -114,6 +119,7 @@
 
     padding-top: 135px;
     padding-bottom: 80px;
+    //margin-left: -150px;
   }
 
   .main-block__title {
@@ -133,7 +139,7 @@
 
   .main-block-list {
     bottom: 197px;
-    left: 0;
+    left: 46px;
   }
 
   .main-block__link {
@@ -148,26 +154,37 @@
     display: none;
   }
 
+  .main-block__image-block {
+    width: 324px;
+    margin-left: 30px;
+  }
+
   .main-block__image {
     width: 324px;
     height: 390px;
 
     margin-top: 30px;
-    margin-left: -120px;
+    //margin-left: 75px;
   }
 }
 
 @media (max-width: $mobile) {
   .main-block {
+    background-image: url("../img/main-background-mobile.png");
     min-height: 491px;
     margin-top: -38px;
   }
 
   .main-block__info {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     padding-top: 119px;
     padding-bottom: 70px;
+
+    outline: 1px solid green;
   }
 
   .main-block__title {
@@ -185,16 +202,20 @@
   }
 
   .main-block-list {
-    bottom: 188px;
-    left: 0;
+    bottom: 280px;
+    left: 250px;
   }
 
   .main-block__link {
-    width: 98%;
+    width: 288px;
     height: 55px;
 
     margin: 0;
     margin-top: 42px;
+  }
+
+  .main-block__image-block {
+    display: none;
   }
 
   .main-block__image {

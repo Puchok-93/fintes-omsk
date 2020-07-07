@@ -36,10 +36,10 @@
   &--area::before {
     position: absolute;
     content: "";
-    width: 340px;
+    width: 90%;
     height: 2px;
 
-    bottom: -8px;
+    bottom: -7px;
     left: 0;
     background-color: rgba(209, 10, 66, 0.2);
   }
@@ -47,10 +47,10 @@
   &--parking::before {
     position: absolute;
     content: "";
-    width: 340px;
+    width: 90%;
     height: 2px;
 
-    bottom: -8px;
+    bottom: -7px;
     right: 0;
     background-color: rgba(209, 10, 66, 0.2);
   }
@@ -165,7 +165,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 20.6%;
+  width: 20.7%;
   height: 307px;
   background-color: #1c3374;
   position: absolute;
@@ -237,7 +237,7 @@
   }
 
   .advantages-list__item {
-    width: 50%;
+    width: 339px;
 
     &::before {
       display: none;
@@ -303,27 +303,27 @@
 
   .advantages-list__description {
     &--area {
-      width: 55%;
+      width: 190px;
       padding-top: 2px;
       padding-bottom: 20px;
       margin-left: 118px;
     }
 
     &--parking {
-      width: 70%;
+      width: 237px;
       padding-top: 2px;
       padding-bottom: 20px;
       margin-left: 102px;
     }
 
     &--comfort {
-      width: 60%;
+      width: 190px;
       padding-top: 3px;
       margin-left: 118px;
     }
 
     &--experience {
-      width: 70%;
+      width: 237px;
       padding-top: 3px;
       margin-left: 102px;
     }

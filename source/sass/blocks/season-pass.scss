@@ -21,6 +21,7 @@
   @include list-reset();
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   z-index: 1;
   margin-top: 30px;
 }
@@ -35,6 +36,7 @@
   box-sizing: border-box;
   background-color: $white;
   border: 7px solid transparent;
+  margin-bottom: 30px;
 
   &:hover {
     border-image: linear-gradient(to right bottom, #ed0233, #003eb7);
@@ -169,8 +171,9 @@
   &:focus {
     background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
     color: $white;
-    border: none;
+    border-color: $white;
     outline: none;
+    transition: 0.3s;
   }
 
   &:active {
@@ -200,7 +203,7 @@
   .season-pass__title {
     font-size: 42px;
     line-height: 42px;
-    padding-top: 79px;
+    padding-top: 99px;
   }
 
   .season-pass-list {

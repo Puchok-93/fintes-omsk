@@ -91,6 +91,7 @@
   &:hover,
   &:focus {
     color: $red;
+    transition: 0.3s;
   }
 
   &:active {

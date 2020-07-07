@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
   }
 
   &--season-pass {
@@ -45,6 +46,10 @@
 @media (max-width: $tablet) {
   .wrapper {
     padding: 0 45px;
+
+    &--main-block {
+      justify-content: center;
+    }
 
     &--gym {
       flex-direction: column;

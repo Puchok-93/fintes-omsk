@@ -47,11 +47,11 @@
         <div class="main-block__info">
           <h1 class="main-block__title">Фитнес центр</h1>
           <p class="main-block__subtitle">Омск</p>
-          <ul class="main-block-list">
+          <!--<ul class="main-block-list">
             <li class="main-block-list__item">Тренажерный зал</li>
             <li class="main-block-list__item">Групповые занятия</li>
             <li class="main-block-list__item">Кардио зона</li>
-          </ul>
+          </ul>-->
           <a class="main-block__link" href="#season-pass">Купить абонемент</a>
         </div>
         <div class="main-block__image-block">
@@ -113,11 +113,12 @@
 
             <source media="(min-width: 1200px)" srcset="img/anons-video-desktop.jpg">
             <source media="(min-width: 768px)" srcset="img/anons-video-tablet.jpg">
-            <img class="gym__anons-video" src="img/anons-video-mobile.jpg" width="364" height="228"
+            <img class="gym__anons-video" src="img/anons-video-mobile.png" width="364" height="228"
               alt="Анонс видео о зале">
           </picture>
-          <button class="gym__video-button" type="button">
-            <svg class="gym__icon-play">
+
+          <button class="gym__video-button" type="button" aria-label="Воспроизвести видео">
+           <svg class="gym__icon-play">
               <use xlink:href="#icon-triangle"></use>
             </svg>
           </button>
@@ -583,7 +584,7 @@
             </div>
 
             <div>
-              <input class="feedback-form__input-phone" type="tel" required>
+              <input class="feedback-form__input-phone" type="tel" id="tel"required>
               <div class="feedback-form__label-box">
                 <label class="feedback-form__label-phone">Телефон</label>
               </div>

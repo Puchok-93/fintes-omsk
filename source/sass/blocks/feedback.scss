@@ -55,6 +55,7 @@ button[type="submit"] {
     background-color: $white;
     color: $dark-blue;
     outline: none;
+    transition: 0.3s;
   }
 
   &:active {
@@ -69,13 +70,12 @@ button[type="submit"] {
   padding: 5px;
   width: 190px;
   border: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #74819C;
   font-size: 14px;
   outline: none;
-
   background-color: transparent;
-
   color: #ffffff;
+  -webkit-border-radius: 0;
 }
 
 .feedback-form__label-name,
@@ -108,13 +108,9 @@ button[type="submit"] {
   height: 2px;
   background-color: #ffffff;
   content: "";
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   transition-property: width;
 }
-/*
-.feedback-form__label-box::before {
-  left: 0;
-}*/
 
 input:focus ~ .feedback-form__label-box::before {
   width: 100%;

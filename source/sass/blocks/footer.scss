@@ -10,7 +10,9 @@ footer {
 .footer-navigation {
   @include list-reset();
   display: flex;
-  margin-left: 59px;
+  flex-wrap: wrap;
+  width: 500px;
+  margin-left: 90px;
 }
 
 .footer-navigation a {
@@ -27,6 +29,7 @@ footer {
   &:hover,
   &:focus {
     opacity: 0.7;
+    transition: 0.3s;
   }
 }
 
@@ -42,6 +45,7 @@ footer {
   &:hover,
   &:focus {
     opacity: 0.7;
+    transition: 0.3s;
   }
 }
 

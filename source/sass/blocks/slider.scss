@@ -105,7 +105,7 @@
   opacity: 0;
   transition: opacity 0.3s;
   z-index: 2;
-  padding-top: 50px;
+  padding-top: 52px;
 
   p {
     margin: 0;
@@ -151,24 +151,32 @@
 }
 
 @media (max-width: $tablet) {
+  .slider {
+    width: 768px;
+  }
+
   .slider__wrapper {
     margin-top: 41px;
   }
 
   .slider__controls-list {
     position: absolute;
-    width: 88%;
+    width: 676px;
     top: 50%;
     left: 6%;
-    margin-top: -17px;
+    margin-top: -18px;
     z-index: 1;
+  }
+
+  .slider__sport {
+    line-height: 21px;
   }
 }
 
 @media (max-width: $mobile) {
   .slider__item {
     width: 226px;
-    height: 274px;
+    height: 276px;
   }
 
   .slider__controls-list {
@@ -187,7 +195,25 @@
     background-position: center;
   }
 
+  .slider__information {
+    padding-top: 45px;
+  }
+
+  .slider__achievement-list {
+    padding-left: 21%;
+    padding-right: 3%;
+    margin-top: 31px;
+  }
+
+  .slider__achievement {
+    &::before {
+      top: 7px;
+      left: -13px;
+    }
+  }
+
   .slider {
-    padding-left: 48px;
+    width: 320px;
+    padding-left: 47px;
   }
 }

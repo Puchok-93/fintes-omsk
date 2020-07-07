@@ -24,6 +24,7 @@
   &:hover,
   &:focus {
     outline: 1px solid $white;
+    transition: 0.3s;
   }
 
   &:active {
