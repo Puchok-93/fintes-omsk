@@ -10,12 +10,11 @@
 .main-block__info {
   display: flex;
   flex-direction: column;
-
+  position: relative;
   width: 400px;
 
   padding-top: 170px;
   padding-bottom: 80px;
-  outline: 1px solid yellow;
 }
 
 .main-block__title {
@@ -23,13 +22,11 @@
   width: 298px;
   font-family: $Bebas;
   font-weight: 700;
-  font-size: 110px;
+  font-size: 109px;
   line-height: 109px;
   text-align: right;
   letter-spacing: 0.03em;
-  position: relative;
   color: $white;
-  outline: 1px solid yellow;
 
   margin: 0;
   margin-left: 97px;
@@ -53,7 +50,7 @@
   order: 3;
   position: absolute;
   bottom: 225px;
-  left: 122px;
+  left: 20px;
 }
 
 .main-block-list__item {
@@ -104,7 +101,6 @@
 .main-block__image-block {
   margin-top: 52px;
   margin-left: -126px;
-  outline: 1px solid lime;
 }
 
 @media (max-width: $tablet) {
@@ -138,8 +134,8 @@
   }
 
   .main-block-list {
-    bottom: 197px;
-    left: 46px;
+    bottom: 198px;
+    left: 2px;
   }
 
   .main-block__link {
@@ -164,7 +160,6 @@
     height: 390px;
 
     margin-top: 30px;
-    //margin-left: 75px;
   }
 }
 
@@ -176,15 +171,13 @@
   }
 
   .main-block__info {
-    width: 100%;
+    width: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
     padding-top: 119px;
     padding-bottom: 70px;
-
-    outline: 1px solid green;
   }
 
   .main-block__title {
@@ -202,8 +195,8 @@
   }
 
   .main-block-list {
-    bottom: 280px;
-    left: 250px;
+    bottom: 187px;
+    left: 2px;
   }
 
   .main-block__link {

@@ -125,6 +125,10 @@ input:focus ~ .feedback-form__label-box::before {
 
 
 @media (max-width: $tablet) {
+  .feedback {
+    padding-bottom: 45px;
+  }
+
   .feedback-form {
     width: 100%;
   }
@@ -154,6 +158,7 @@ input:focus ~ .feedback-form__label-box::before {
 @media (max-width: $mobile) {
   .feedback {
     background-image: linear-gradient(to bottom, #102654 43.3%, #ffffff 43.3%);
+    padding-bottom: 46px;
   }
 
   .feedback-form {

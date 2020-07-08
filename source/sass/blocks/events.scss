@@ -1,6 +1,6 @@
 .events {
   background-color: $white;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .event {
@@ -289,7 +289,7 @@
 
 @media (max-width: $mobile) {
   .events {
-    padding-top: 75px;
+    padding-top: 73px;
   }
 
   .event__image-block {

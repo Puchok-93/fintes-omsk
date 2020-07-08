@@ -5,14 +5,28 @@ footer {
 .footer__logo {
   width: 89px;
   height: 20px;
+  margin-top: 10px;
 }
 
 .footer-navigation {
   @include list-reset();
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
-  margin-left: 90px;
+  width: 431px;
+  margin-left: 25px;
+}
+
+.footer-navigation li {
+  margin-left: 40px;
+  padding: 10px 0;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:nth-child(6n+6) {
+    margin-left: 0;
+  }
 }
 
 .footer-navigation a {
@@ -24,7 +38,6 @@ footer {
   text-decoration: none;
 
   color: $white;
-  margin-right: 40px;
 
   &:hover,
   &:focus {
@@ -38,7 +51,7 @@ footer {
   display: flex;
   width: 110px;
   justify-content: space-between;
-  margin-top: -1px;
+  margin-top: 9px;
 }
 
 .footer-social-list a {
@@ -52,17 +65,20 @@ footer {
 .footer-social-list__icon {
   &--vk {
     width: 24px;
-    height: 13px;
+    height: 24px;
+    margin-top: -3px;
   }
 
   &--instagram {
     width: 24px;
     height: 24px;
+    margin-top: -2px;
   }
 
   &--fb {
     width: 12px;
     height: 24px;
+    margin-top: -2px;
   }
 }
 
@@ -70,11 +86,23 @@ footer {
   .footer__logo {
     width: 82px;
     height: 20px;
+    margin-top: 2px;
   }
 
   .footer-navigation {
     width: 391px;
-    margin-left: 19px;
+    margin-left: 22px;
+    margin-top: -2px;
+  }
+
+ .footer-navigation li {
+   margin: 0;
+    margin-left: 30px;
+    padding: 5px 0;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
   .footer-navigation a {
@@ -85,7 +113,7 @@ footer {
     line-height: 16px;
     text-decoration: none;
     color: $white;
-    margin-right: 30px;
+    margin-right: 0;
   }
 
   .footer-social-list {
@@ -93,12 +121,12 @@ footer {
     display: flex;
     width: 100px;
     justify-content: space-between;
-    margin-top: -1px;
+    margin-top: 2px;
   }
 
   .footer-social-list__icon {
     &--vk {
-      margin-top: 4px;
+      margin-top: -4px;
     }
   }
 }
@@ -108,25 +136,26 @@ footer {
     width: 68px;
     height: 15px;
     position: absolute;
-    top: 51px;
+    top: 49px;
   }
 
   .footer-navigation {
-    width: 290px;
+    width: 303px;
     display: block;
     column-count: 2;
     margin: 0;
     margin-top: 5px;
   }
 
-  .footer-navigation__item {
+  .footer-navigation li {
+    margin: 0;
+    padding: 0;
     margin-top: 21px;
-    margin-left: 3px;
 
-    &:first-child {
+     &:first-child {
       margin-top: 40px;
-    }
-  }
+     }
+   }
 
   .footer-navigation__item a {
     font-size: 16px;
@@ -142,6 +171,7 @@ footer {
     &--vk {
       width: 32px;
       height: 17px;
+      margin-top: 3px;
     }
 
     &--instagram {

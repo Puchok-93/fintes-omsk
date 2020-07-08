@@ -56,12 +56,8 @@
 
 .gym__video-block {
   position: absolute;
-  //margin-left: 437px;
-  //margin-right: auto;
-  //margin-top: -113px;
   top: 410px;
   left: 39.5%;
-  //position: relative;
 }
 
 .gym__video-button {
@@ -124,8 +120,8 @@
   }
 
   .gym__video-block {
-    top: 87.3%;
-    left: 32.7%;
+    top: 87.5%;
+    left: calc(50% - 266px/2);
   }
 
   .gym__anons-video {
@@ -188,34 +184,33 @@
   }
 }
 
-
 @media (max-width: $mobile) {
   .gym {
     padding-bottom: 277px;
   }
 
   .gym__info-block {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .gym__title {
     font-size: 32px;
     line-height: 32px;
 
-    margin-left: 15px;
+    margin-left: -80px;
     padding-top: 68px;
   }
 
   .gym__subtitle {
-    margin-left: 15px;
+    margin-left: -13px;
     padding-top: 6px;
   }
 
   .gym__description {
-    width: 83%;
+    width: 260px;
     text-align: left;
 
-    margin-left: 15px;
+    margin-left: -35px;
     padding-top: 23px;
   }
 
@@ -225,11 +220,7 @@
 
   .gym__video-block {
     top: 106.2%;
-    left: 0;
-
-    /*&::before {
-      width: 320px;
-    }*/
+    left: calc(50% - 320px/2);
   }
 
   .gym__anons-video {
